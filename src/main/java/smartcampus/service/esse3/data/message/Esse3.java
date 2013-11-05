@@ -6319,6 +6319,3856 @@ public final class Esse3 {
     // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.CompleteExam)
   }
   
+  public interface FacoltaOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string facId = 1;
+    boolean hasFacId();
+    String getFacId();
+    
+    // required string description = 2;
+    boolean hasDescription();
+    String getDescription();
+  }
+  public static final class Facolta extends
+      com.google.protobuf.GeneratedMessage
+      implements FacoltaOrBuilder {
+    // Use Facolta.newBuilder() to construct.
+    private Facolta(Builder builder) {
+      super(builder);
+    }
+    private Facolta(boolean noInit) {}
+    
+    private static final Facolta defaultInstance;
+    public static Facolta getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Facolta getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Facolta_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Facolta_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string facId = 1;
+    public static final int FACID_FIELD_NUMBER = 1;
+    private java.lang.Object facId_;
+    public boolean hasFacId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getFacId() {
+      java.lang.Object ref = facId_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          facId_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getFacIdBytes() {
+      java.lang.Object ref = facId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        facId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string description = 2;
+    public static final int DESCRIPTION_FIELD_NUMBER = 2;
+    private java.lang.Object description_;
+    public boolean hasDescription() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getDescription() {
+      java.lang.Object ref = description_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          description_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDescriptionBytes() {
+      java.lang.Object ref = description_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        description_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      facId_ = "";
+      description_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasFacId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDescription()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getFacIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getDescriptionBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getFacIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getDescriptionBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Facolta parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Facolta prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.service.esse3.data.message.Esse3.FacoltaOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Facolta_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Facolta_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.service.esse3.data.message.Esse3.Facolta.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        facId_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        description_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Facolta.getDescriptor();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Facolta getDefaultInstanceForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Facolta.getDefaultInstance();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Facolta build() {
+        smartcampus.service.esse3.data.message.Esse3.Facolta result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.service.esse3.data.message.Esse3.Facolta buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.service.esse3.data.message.Esse3.Facolta result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Facolta buildPartial() {
+        smartcampus.service.esse3.data.message.Esse3.Facolta result = new smartcampus.service.esse3.data.message.Esse3.Facolta(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.facId_ = facId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.description_ = description_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Facolta) {
+          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Facolta)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Facolta other) {
+        if (other == smartcampus.service.esse3.data.message.Esse3.Facolta.getDefaultInstance()) return this;
+        if (other.hasFacId()) {
+          setFacId(other.getFacId());
+        }
+        if (other.hasDescription()) {
+          setDescription(other.getDescription());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasFacId()) {
+          
+          return false;
+        }
+        if (!hasDescription()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              facId_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              description_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string facId = 1;
+      private java.lang.Object facId_ = "";
+      public boolean hasFacId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getFacId() {
+        java.lang.Object ref = facId_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          facId_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setFacId(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        facId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearFacId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        facId_ = getDefaultInstance().getFacId();
+        onChanged();
+        return this;
+      }
+      void setFacId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        facId_ = value;
+        onChanged();
+      }
+      
+      // required string description = 2;
+      private java.lang.Object description_ = "";
+      public boolean hasDescription() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getDescription() {
+        java.lang.Object ref = description_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          description_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDescription(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        description_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDescription() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        description_ = getDefaultInstance().getDescription();
+        onChanged();
+        return this;
+      }
+      void setDescription(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        description_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Facolta)
+    }
+    
+    static {
+      defaultInstance = new Facolta(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Facolta)
+  }
+  
+  public interface CdsOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string cdsId = 1;
+    boolean hasCdsId();
+    String getCdsId();
+    
+    // required string cdsCod = 2;
+    boolean hasCdsCod();
+    String getCdsCod();
+    
+    // required string facId = 3;
+    boolean hasFacId();
+    String getFacId();
+    
+    // required string description = 4;
+    boolean hasDescription();
+    String getDescription();
+    
+    // required string durata = 5;
+    boolean hasDurata();
+    String getDurata();
+    
+    // required string aaOrd = 6;
+    boolean hasAaOrd();
+    String getAaOrd();
+    
+    // repeated .smartcampus.service.esse3.data.message.Pds pds = 7;
+    java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds> 
+        getPdsList();
+    smartcampus.service.esse3.data.message.Esse3.Pds getPds(int index);
+    int getPdsCount();
+    java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder> 
+        getPdsOrBuilderList();
+    smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder getPdsOrBuilder(
+        int index);
+  }
+  public static final class Cds extends
+      com.google.protobuf.GeneratedMessage
+      implements CdsOrBuilder {
+    // Use Cds.newBuilder() to construct.
+    private Cds(Builder builder) {
+      super(builder);
+    }
+    private Cds(boolean noInit) {}
+    
+    private static final Cds defaultInstance;
+    public static Cds getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Cds getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Cds_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Cds_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string cdsId = 1;
+    public static final int CDSID_FIELD_NUMBER = 1;
+    private java.lang.Object cdsId_;
+    public boolean hasCdsId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getCdsId() {
+      java.lang.Object ref = cdsId_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          cdsId_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getCdsIdBytes() {
+      java.lang.Object ref = cdsId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        cdsId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string cdsCod = 2;
+    public static final int CDSCOD_FIELD_NUMBER = 2;
+    private java.lang.Object cdsCod_;
+    public boolean hasCdsCod() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getCdsCod() {
+      java.lang.Object ref = cdsCod_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          cdsCod_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getCdsCodBytes() {
+      java.lang.Object ref = cdsCod_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        cdsCod_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string facId = 3;
+    public static final int FACID_FIELD_NUMBER = 3;
+    private java.lang.Object facId_;
+    public boolean hasFacId() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public String getFacId() {
+      java.lang.Object ref = facId_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          facId_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getFacIdBytes() {
+      java.lang.Object ref = facId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        facId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string description = 4;
+    public static final int DESCRIPTION_FIELD_NUMBER = 4;
+    private java.lang.Object description_;
+    public boolean hasDescription() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public String getDescription() {
+      java.lang.Object ref = description_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          description_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDescriptionBytes() {
+      java.lang.Object ref = description_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        description_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string durata = 5;
+    public static final int DURATA_FIELD_NUMBER = 5;
+    private java.lang.Object durata_;
+    public boolean hasDurata() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    public String getDurata() {
+      java.lang.Object ref = durata_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          durata_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDurataBytes() {
+      java.lang.Object ref = durata_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        durata_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string aaOrd = 6;
+    public static final int AAORD_FIELD_NUMBER = 6;
+    private java.lang.Object aaOrd_;
+    public boolean hasAaOrd() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    public String getAaOrd() {
+      java.lang.Object ref = aaOrd_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          aaOrd_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getAaOrdBytes() {
+      java.lang.Object ref = aaOrd_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        aaOrd_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // repeated .smartcampus.service.esse3.data.message.Pds pds = 7;
+    public static final int PDS_FIELD_NUMBER = 7;
+    private java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds> pds_;
+    public java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds> getPdsList() {
+      return pds_;
+    }
+    public java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder> 
+        getPdsOrBuilderList() {
+      return pds_;
+    }
+    public int getPdsCount() {
+      return pds_.size();
+    }
+    public smartcampus.service.esse3.data.message.Esse3.Pds getPds(int index) {
+      return pds_.get(index);
+    }
+    public smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder getPdsOrBuilder(
+        int index) {
+      return pds_.get(index);
+    }
+    
+    private void initFields() {
+      cdsId_ = "";
+      cdsCod_ = "";
+      facId_ = "";
+      description_ = "";
+      durata_ = "";
+      aaOrd_ = "";
+      pds_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasCdsId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasCdsCod()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasFacId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDescription()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDurata()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasAaOrd()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getPdsCount(); i++) {
+        if (!getPds(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getCdsIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getCdsCodBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getFacIdBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, getDescriptionBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeBytes(5, getDurataBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBytes(6, getAaOrdBytes());
+      }
+      for (int i = 0; i < pds_.size(); i++) {
+        output.writeMessage(7, pds_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getCdsIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getCdsCodBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getFacIdBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getDescriptionBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getDurataBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(6, getAaOrdBytes());
+      }
+      for (int i = 0; i < pds_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, pds_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Cds parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Cds prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.service.esse3.data.message.Esse3.CdsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Cds_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Cds_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.service.esse3.data.message.Esse3.Cds.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getPdsFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        cdsId_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        cdsCod_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        facId_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        description_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        durata_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
+        aaOrd_ = "";
+        bitField0_ = (bitField0_ & ~0x00000020);
+        if (pdsBuilder_ == null) {
+          pds_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+        } else {
+          pdsBuilder_.clear();
+        }
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Cds.getDescriptor();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Cds getDefaultInstanceForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Cds.getDefaultInstance();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Cds build() {
+        smartcampus.service.esse3.data.message.Esse3.Cds result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.service.esse3.data.message.Esse3.Cds buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.service.esse3.data.message.Esse3.Cds result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Cds buildPartial() {
+        smartcampus.service.esse3.data.message.Esse3.Cds result = new smartcampus.service.esse3.data.message.Esse3.Cds(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.cdsId_ = cdsId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.cdsCod_ = cdsCod_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.facId_ = facId_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.description_ = description_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.durata_ = durata_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.aaOrd_ = aaOrd_;
+        if (pdsBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) == 0x00000040)) {
+            pds_ = java.util.Collections.unmodifiableList(pds_);
+            bitField0_ = (bitField0_ & ~0x00000040);
+          }
+          result.pds_ = pds_;
+        } else {
+          result.pds_ = pdsBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Cds) {
+          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Cds)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Cds other) {
+        if (other == smartcampus.service.esse3.data.message.Esse3.Cds.getDefaultInstance()) return this;
+        if (other.hasCdsId()) {
+          setCdsId(other.getCdsId());
+        }
+        if (other.hasCdsCod()) {
+          setCdsCod(other.getCdsCod());
+        }
+        if (other.hasFacId()) {
+          setFacId(other.getFacId());
+        }
+        if (other.hasDescription()) {
+          setDescription(other.getDescription());
+        }
+        if (other.hasDurata()) {
+          setDurata(other.getDurata());
+        }
+        if (other.hasAaOrd()) {
+          setAaOrd(other.getAaOrd());
+        }
+        if (pdsBuilder_ == null) {
+          if (!other.pds_.isEmpty()) {
+            if (pds_.isEmpty()) {
+              pds_ = other.pds_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+            } else {
+              ensurePdsIsMutable();
+              pds_.addAll(other.pds_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.pds_.isEmpty()) {
+            if (pdsBuilder_.isEmpty()) {
+              pdsBuilder_.dispose();
+              pdsBuilder_ = null;
+              pds_ = other.pds_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+              pdsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getPdsFieldBuilder() : null;
+            } else {
+              pdsBuilder_.addAllMessages(other.pds_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasCdsId()) {
+          
+          return false;
+        }
+        if (!hasCdsCod()) {
+          
+          return false;
+        }
+        if (!hasFacId()) {
+          
+          return false;
+        }
+        if (!hasDescription()) {
+          
+          return false;
+        }
+        if (!hasDurata()) {
+          
+          return false;
+        }
+        if (!hasAaOrd()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getPdsCount(); i++) {
+          if (!getPds(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              cdsId_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              cdsCod_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              facId_ = input.readBytes();
+              break;
+            }
+            case 34: {
+              bitField0_ |= 0x00000008;
+              description_ = input.readBytes();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              durata_ = input.readBytes();
+              break;
+            }
+            case 50: {
+              bitField0_ |= 0x00000020;
+              aaOrd_ = input.readBytes();
+              break;
+            }
+            case 58: {
+              smartcampus.service.esse3.data.message.Esse3.Pds.Builder subBuilder = smartcampus.service.esse3.data.message.Esse3.Pds.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addPds(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string cdsId = 1;
+      private java.lang.Object cdsId_ = "";
+      public boolean hasCdsId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getCdsId() {
+        java.lang.Object ref = cdsId_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          cdsId_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setCdsId(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        cdsId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearCdsId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        cdsId_ = getDefaultInstance().getCdsId();
+        onChanged();
+        return this;
+      }
+      void setCdsId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        cdsId_ = value;
+        onChanged();
+      }
+      
+      // required string cdsCod = 2;
+      private java.lang.Object cdsCod_ = "";
+      public boolean hasCdsCod() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getCdsCod() {
+        java.lang.Object ref = cdsCod_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          cdsCod_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setCdsCod(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        cdsCod_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearCdsCod() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        cdsCod_ = getDefaultInstance().getCdsCod();
+        onChanged();
+        return this;
+      }
+      void setCdsCod(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        cdsCod_ = value;
+        onChanged();
+      }
+      
+      // required string facId = 3;
+      private java.lang.Object facId_ = "";
+      public boolean hasFacId() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public String getFacId() {
+        java.lang.Object ref = facId_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          facId_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setFacId(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        facId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearFacId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        facId_ = getDefaultInstance().getFacId();
+        onChanged();
+        return this;
+      }
+      void setFacId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
+        facId_ = value;
+        onChanged();
+      }
+      
+      // required string description = 4;
+      private java.lang.Object description_ = "";
+      public boolean hasDescription() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public String getDescription() {
+        java.lang.Object ref = description_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          description_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDescription(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        description_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDescription() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        description_ = getDefaultInstance().getDescription();
+        onChanged();
+        return this;
+      }
+      void setDescription(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000008;
+        description_ = value;
+        onChanged();
+      }
+      
+      // required string durata = 5;
+      private java.lang.Object durata_ = "";
+      public boolean hasDurata() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      public String getDurata() {
+        java.lang.Object ref = durata_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          durata_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDurata(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        durata_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDurata() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        durata_ = getDefaultInstance().getDurata();
+        onChanged();
+        return this;
+      }
+      void setDurata(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000010;
+        durata_ = value;
+        onChanged();
+      }
+      
+      // required string aaOrd = 6;
+      private java.lang.Object aaOrd_ = "";
+      public boolean hasAaOrd() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      public String getAaOrd() {
+        java.lang.Object ref = aaOrd_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          aaOrd_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setAaOrd(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        aaOrd_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearAaOrd() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        aaOrd_ = getDefaultInstance().getAaOrd();
+        onChanged();
+        return this;
+      }
+      void setAaOrd(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000020;
+        aaOrd_ = value;
+        onChanged();
+      }
+      
+      // repeated .smartcampus.service.esse3.data.message.Pds pds = 7;
+      private java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds> pds_ =
+        java.util.Collections.emptyList();
+      private void ensurePdsIsMutable() {
+        if (!((bitField0_ & 0x00000040) == 0x00000040)) {
+          pds_ = new java.util.ArrayList<smartcampus.service.esse3.data.message.Esse3.Pds>(pds_);
+          bitField0_ |= 0x00000040;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          smartcampus.service.esse3.data.message.Esse3.Pds, smartcampus.service.esse3.data.message.Esse3.Pds.Builder, smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder> pdsBuilder_;
+      
+      public java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds> getPdsList() {
+        if (pdsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(pds_);
+        } else {
+          return pdsBuilder_.getMessageList();
+        }
+      }
+      public int getPdsCount() {
+        if (pdsBuilder_ == null) {
+          return pds_.size();
+        } else {
+          return pdsBuilder_.getCount();
+        }
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Pds getPds(int index) {
+        if (pdsBuilder_ == null) {
+          return pds_.get(index);
+        } else {
+          return pdsBuilder_.getMessage(index);
+        }
+      }
+      public Builder setPds(
+          int index, smartcampus.service.esse3.data.message.Esse3.Pds value) {
+        if (pdsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePdsIsMutable();
+          pds_.set(index, value);
+          onChanged();
+        } else {
+          pdsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setPds(
+          int index, smartcampus.service.esse3.data.message.Esse3.Pds.Builder builderForValue) {
+        if (pdsBuilder_ == null) {
+          ensurePdsIsMutable();
+          pds_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          pdsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addPds(smartcampus.service.esse3.data.message.Esse3.Pds value) {
+        if (pdsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePdsIsMutable();
+          pds_.add(value);
+          onChanged();
+        } else {
+          pdsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addPds(
+          int index, smartcampus.service.esse3.data.message.Esse3.Pds value) {
+        if (pdsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePdsIsMutable();
+          pds_.add(index, value);
+          onChanged();
+        } else {
+          pdsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addPds(
+          smartcampus.service.esse3.data.message.Esse3.Pds.Builder builderForValue) {
+        if (pdsBuilder_ == null) {
+          ensurePdsIsMutable();
+          pds_.add(builderForValue.build());
+          onChanged();
+        } else {
+          pdsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addPds(
+          int index, smartcampus.service.esse3.data.message.Esse3.Pds.Builder builderForValue) {
+        if (pdsBuilder_ == null) {
+          ensurePdsIsMutable();
+          pds_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          pdsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllPds(
+          java.lang.Iterable<? extends smartcampus.service.esse3.data.message.Esse3.Pds> values) {
+        if (pdsBuilder_ == null) {
+          ensurePdsIsMutable();
+          super.addAll(values, pds_);
+          onChanged();
+        } else {
+          pdsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearPds() {
+        if (pdsBuilder_ == null) {
+          pds_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+          onChanged();
+        } else {
+          pdsBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removePds(int index) {
+        if (pdsBuilder_ == null) {
+          ensurePdsIsMutable();
+          pds_.remove(index);
+          onChanged();
+        } else {
+          pdsBuilder_.remove(index);
+        }
+        return this;
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Pds.Builder getPdsBuilder(
+          int index) {
+        return getPdsFieldBuilder().getBuilder(index);
+      }
+      public smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder getPdsOrBuilder(
+          int index) {
+        if (pdsBuilder_ == null) {
+          return pds_.get(index);  } else {
+          return pdsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder> 
+           getPdsOrBuilderList() {
+        if (pdsBuilder_ != null) {
+          return pdsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(pds_);
+        }
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Pds.Builder addPdsBuilder() {
+        return getPdsFieldBuilder().addBuilder(
+            smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance());
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Pds.Builder addPdsBuilder(
+          int index) {
+        return getPdsFieldBuilder().addBuilder(
+            index, smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance());
+      }
+      public java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds.Builder> 
+           getPdsBuilderList() {
+        return getPdsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          smartcampus.service.esse3.data.message.Esse3.Pds, smartcampus.service.esse3.data.message.Esse3.Pds.Builder, smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder> 
+          getPdsFieldBuilder() {
+        if (pdsBuilder_ == null) {
+          pdsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              smartcampus.service.esse3.data.message.Esse3.Pds, smartcampus.service.esse3.data.message.Esse3.Pds.Builder, smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder>(
+                  pds_,
+                  ((bitField0_ & 0x00000040) == 0x00000040),
+                  getParentForChildren(),
+                  isClean());
+          pds_ = null;
+        }
+        return pdsBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Cds)
+    }
+    
+    static {
+      defaultInstance = new Cds(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Cds)
+  }
+  
+  public interface PdsOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string pdsId = 1;
+    boolean hasPdsId();
+    String getPdsId();
+    
+    // required string pdsCod = 2;
+    boolean hasPdsCod();
+    String getPdsCod();
+  }
+  public static final class Pds extends
+      com.google.protobuf.GeneratedMessage
+      implements PdsOrBuilder {
+    // Use Pds.newBuilder() to construct.
+    private Pds(Builder builder) {
+      super(builder);
+    }
+    private Pds(boolean noInit) {}
+    
+    private static final Pds defaultInstance;
+    public static Pds getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Pds getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Pds_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Pds_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string pdsId = 1;
+    public static final int PDSID_FIELD_NUMBER = 1;
+    private java.lang.Object pdsId_;
+    public boolean hasPdsId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getPdsId() {
+      java.lang.Object ref = pdsId_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          pdsId_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getPdsIdBytes() {
+      java.lang.Object ref = pdsId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        pdsId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string pdsCod = 2;
+    public static final int PDSCOD_FIELD_NUMBER = 2;
+    private java.lang.Object pdsCod_;
+    public boolean hasPdsCod() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getPdsCod() {
+      java.lang.Object ref = pdsCod_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          pdsCod_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getPdsCodBytes() {
+      java.lang.Object ref = pdsCod_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        pdsCod_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      pdsId_ = "";
+      pdsCod_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasPdsId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPdsCod()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getPdsIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getPdsCodBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getPdsIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getPdsCodBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Pds prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Pds_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Pds_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.service.esse3.data.message.Esse3.Pds.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        pdsId_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pdsCod_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Pds.getDescriptor();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Pds getDefaultInstanceForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Pds build() {
+        smartcampus.service.esse3.data.message.Esse3.Pds result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.service.esse3.data.message.Esse3.Pds buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.service.esse3.data.message.Esse3.Pds result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Pds buildPartial() {
+        smartcampus.service.esse3.data.message.Esse3.Pds result = new smartcampus.service.esse3.data.message.Esse3.Pds(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.pdsId_ = pdsId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.pdsCod_ = pdsCod_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Pds) {
+          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Pds)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Pds other) {
+        if (other == smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance()) return this;
+        if (other.hasPdsId()) {
+          setPdsId(other.getPdsId());
+        }
+        if (other.hasPdsCod()) {
+          setPdsCod(other.getPdsCod());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasPdsId()) {
+          
+          return false;
+        }
+        if (!hasPdsCod()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              pdsId_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              pdsCod_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string pdsId = 1;
+      private java.lang.Object pdsId_ = "";
+      public boolean hasPdsId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getPdsId() {
+        java.lang.Object ref = pdsId_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          pdsId_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setPdsId(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        pdsId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearPdsId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pdsId_ = getDefaultInstance().getPdsId();
+        onChanged();
+        return this;
+      }
+      void setPdsId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        pdsId_ = value;
+        onChanged();
+      }
+      
+      // required string pdsCod = 2;
+      private java.lang.Object pdsCod_ = "";
+      public boolean hasPdsCod() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getPdsCod() {
+        java.lang.Object ref = pdsCod_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          pdsCod_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setPdsCod(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        pdsCod_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearPdsCod() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pdsCod_ = getDefaultInstance().getPdsCod();
+        onChanged();
+        return this;
+      }
+      void setPdsCod(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        pdsCod_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Pds)
+    }
+    
+    static {
+      defaultInstance = new Pds(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Pds)
+  }
+  
+  public interface AdOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string adId = 1;
+    boolean hasAdId();
+    String getAdId();
+    
+    // required string adcod = 2;
+    boolean hasAdcod();
+    String getAdcod();
+    
+    // required string description = 3;
+    boolean hasDescription();
+    String getDescription();
+    
+    // repeated string fatPart = 4;
+    java.util.List<String> getFatPartList();
+    int getFatPartCount();
+    String getFatPart(int index);
+    
+    // repeated string domPart = 5;
+    java.util.List<String> getDomPartList();
+    int getDomPartCount();
+    String getDomPart(int index);
+  }
+  public static final class Ad extends
+      com.google.protobuf.GeneratedMessage
+      implements AdOrBuilder {
+    // Use Ad.newBuilder() to construct.
+    private Ad(Builder builder) {
+      super(builder);
+    }
+    private Ad(boolean noInit) {}
+    
+    private static final Ad defaultInstance;
+    public static Ad getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Ad getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string adId = 1;
+    public static final int ADID_FIELD_NUMBER = 1;
+    private java.lang.Object adId_;
+    public boolean hasAdId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getAdId() {
+      java.lang.Object ref = adId_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          adId_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getAdIdBytes() {
+      java.lang.Object ref = adId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        adId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string adcod = 2;
+    public static final int ADCOD_FIELD_NUMBER = 2;
+    private java.lang.Object adcod_;
+    public boolean hasAdcod() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getAdcod() {
+      java.lang.Object ref = adcod_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          adcod_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getAdcodBytes() {
+      java.lang.Object ref = adcod_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        adcod_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string description = 3;
+    public static final int DESCRIPTION_FIELD_NUMBER = 3;
+    private java.lang.Object description_;
+    public boolean hasDescription() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public String getDescription() {
+      java.lang.Object ref = description_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          description_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDescriptionBytes() {
+      java.lang.Object ref = description_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        description_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // repeated string fatPart = 4;
+    public static final int FATPART_FIELD_NUMBER = 4;
+    private com.google.protobuf.LazyStringList fatPart_;
+    public java.util.List<String>
+        getFatPartList() {
+      return fatPart_;
+    }
+    public int getFatPartCount() {
+      return fatPart_.size();
+    }
+    public String getFatPart(int index) {
+      return fatPart_.get(index);
+    }
+    
+    // repeated string domPart = 5;
+    public static final int DOMPART_FIELD_NUMBER = 5;
+    private com.google.protobuf.LazyStringList domPart_;
+    public java.util.List<String>
+        getDomPartList() {
+      return domPart_;
+    }
+    public int getDomPartCount() {
+      return domPart_.size();
+    }
+    public String getDomPart(int index) {
+      return domPart_.get(index);
+    }
+    
+    private void initFields() {
+      adId_ = "";
+      adcod_ = "";
+      description_ = "";
+      fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasAdId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasAdcod()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDescription()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getAdIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getAdcodBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getDescriptionBytes());
+      }
+      for (int i = 0; i < fatPart_.size(); i++) {
+        output.writeBytes(4, fatPart_.getByteString(i));
+      }
+      for (int i = 0; i < domPart_.size(); i++) {
+        output.writeBytes(5, domPart_.getByteString(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getAdIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getAdcodBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getDescriptionBytes());
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < fatPart_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeBytesSizeNoTag(fatPart_.getByteString(i));
+        }
+        size += dataSize;
+        size += 1 * getFatPartList().size();
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < domPart_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeBytesSizeNoTag(domPart_.getByteString(i));
+        }
+        size += dataSize;
+        size += 1 * getDomPartList().size();
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Ad prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.service.esse3.data.message.Esse3.AdOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.service.esse3.data.message.Esse3.Ad.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        adId_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        adcod_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        description_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Ad.getDescriptor();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Ad getDefaultInstanceForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Ad.getDefaultInstance();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Ad build() {
+        smartcampus.service.esse3.data.message.Esse3.Ad result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.service.esse3.data.message.Esse3.Ad buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.service.esse3.data.message.Esse3.Ad result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Ad buildPartial() {
+        smartcampus.service.esse3.data.message.Esse3.Ad result = new smartcampus.service.esse3.data.message.Esse3.Ad(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.adId_ = adId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.adcod_ = adcod_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.description_ = description_;
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          fatPart_ = new com.google.protobuf.UnmodifiableLazyStringList(
+              fatPart_);
+          bitField0_ = (bitField0_ & ~0x00000008);
+        }
+        result.fatPart_ = fatPart_;
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          domPart_ = new com.google.protobuf.UnmodifiableLazyStringList(
+              domPart_);
+          bitField0_ = (bitField0_ & ~0x00000010);
+        }
+        result.domPart_ = domPart_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Ad) {
+          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Ad)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Ad other) {
+        if (other == smartcampus.service.esse3.data.message.Esse3.Ad.getDefaultInstance()) return this;
+        if (other.hasAdId()) {
+          setAdId(other.getAdId());
+        }
+        if (other.hasAdcod()) {
+          setAdcod(other.getAdcod());
+        }
+        if (other.hasDescription()) {
+          setDescription(other.getDescription());
+        }
+        if (!other.fatPart_.isEmpty()) {
+          if (fatPart_.isEmpty()) {
+            fatPart_ = other.fatPart_;
+            bitField0_ = (bitField0_ & ~0x00000008);
+          } else {
+            ensureFatPartIsMutable();
+            fatPart_.addAll(other.fatPart_);
+          }
+          onChanged();
+        }
+        if (!other.domPart_.isEmpty()) {
+          if (domPart_.isEmpty()) {
+            domPart_ = other.domPart_;
+            bitField0_ = (bitField0_ & ~0x00000010);
+          } else {
+            ensureDomPartIsMutable();
+            domPart_.addAll(other.domPart_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasAdId()) {
+          
+          return false;
+        }
+        if (!hasAdcod()) {
+          
+          return false;
+        }
+        if (!hasDescription()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              adId_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              adcod_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              description_ = input.readBytes();
+              break;
+            }
+            case 34: {
+              ensureFatPartIsMutable();
+              fatPart_.add(input.readBytes());
+              break;
+            }
+            case 42: {
+              ensureDomPartIsMutable();
+              domPart_.add(input.readBytes());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string adId = 1;
+      private java.lang.Object adId_ = "";
+      public boolean hasAdId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getAdId() {
+        java.lang.Object ref = adId_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          adId_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setAdId(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        adId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearAdId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        adId_ = getDefaultInstance().getAdId();
+        onChanged();
+        return this;
+      }
+      void setAdId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        adId_ = value;
+        onChanged();
+      }
+      
+      // required string adcod = 2;
+      private java.lang.Object adcod_ = "";
+      public boolean hasAdcod() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getAdcod() {
+        java.lang.Object ref = adcod_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          adcod_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setAdcod(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        adcod_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearAdcod() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        adcod_ = getDefaultInstance().getAdcod();
+        onChanged();
+        return this;
+      }
+      void setAdcod(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        adcod_ = value;
+        onChanged();
+      }
+      
+      // required string description = 3;
+      private java.lang.Object description_ = "";
+      public boolean hasDescription() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public String getDescription() {
+        java.lang.Object ref = description_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          description_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDescription(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        description_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDescription() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        description_ = getDefaultInstance().getDescription();
+        onChanged();
+        return this;
+      }
+      void setDescription(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
+        description_ = value;
+        onChanged();
+      }
+      
+      // repeated string fatPart = 4;
+      private com.google.protobuf.LazyStringList fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureFatPartIsMutable() {
+        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
+          fatPart_ = new com.google.protobuf.LazyStringArrayList(fatPart_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+      public java.util.List<String>
+          getFatPartList() {
+        return java.util.Collections.unmodifiableList(fatPart_);
+      }
+      public int getFatPartCount() {
+        return fatPart_.size();
+      }
+      public String getFatPart(int index) {
+        return fatPart_.get(index);
+      }
+      public Builder setFatPart(
+          int index, String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFatPartIsMutable();
+        fatPart_.set(index, value);
+        onChanged();
+        return this;
+      }
+      public Builder addFatPart(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFatPartIsMutable();
+        fatPart_.add(value);
+        onChanged();
+        return this;
+      }
+      public Builder addAllFatPart(
+          java.lang.Iterable<String> values) {
+        ensureFatPartIsMutable();
+        super.addAll(values, fatPart_);
+        onChanged();
+        return this;
+      }
+      public Builder clearFatPart() {
+        fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        onChanged();
+        return this;
+      }
+      void addFatPart(com.google.protobuf.ByteString value) {
+        ensureFatPartIsMutable();
+        fatPart_.add(value);
+        onChanged();
+      }
+      
+      // repeated string domPart = 5;
+      private com.google.protobuf.LazyStringList domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureDomPartIsMutable() {
+        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
+          domPart_ = new com.google.protobuf.LazyStringArrayList(domPart_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+      public java.util.List<String>
+          getDomPartList() {
+        return java.util.Collections.unmodifiableList(domPart_);
+      }
+      public int getDomPartCount() {
+        return domPart_.size();
+      }
+      public String getDomPart(int index) {
+        return domPart_.get(index);
+      }
+      public Builder setDomPart(
+          int index, String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDomPartIsMutable();
+        domPart_.set(index, value);
+        onChanged();
+        return this;
+      }
+      public Builder addDomPart(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDomPartIsMutable();
+        domPart_.add(value);
+        onChanged();
+        return this;
+      }
+      public Builder addAllDomPart(
+          java.lang.Iterable<String> values) {
+        ensureDomPartIsMutable();
+        super.addAll(values, domPart_);
+        onChanged();
+        return this;
+      }
+      public Builder clearDomPart() {
+        domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        onChanged();
+        return this;
+      }
+      void addDomPart(com.google.protobuf.ByteString value) {
+        ensureDomPartIsMutable();
+        domPart_.add(value);
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Ad)
+    }
+    
+    static {
+      defaultInstance = new Ad(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Ad)
+  }
+  
+  public interface OrariOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string type = 1;
+    boolean hasType();
+    String getType();
+    
+    // required string date = 2;
+    boolean hasDate();
+    String getDate();
+    
+    // required string from = 3;
+    boolean hasFrom();
+    String getFrom();
+    
+    // required string to = 4;
+    boolean hasTo();
+    String getTo();
+    
+    // required string room = 5;
+    boolean hasRoom();
+    String getRoom();
+    
+    // required string teacher = 6;
+    boolean hasTeacher();
+    String getTeacher();
+  }
+  public static final class Orari extends
+      com.google.protobuf.GeneratedMessage
+      implements OrariOrBuilder {
+    // Use Orari.newBuilder() to construct.
+    private Orari(Builder builder) {
+      super(builder);
+    }
+    private Orari(boolean noInit) {}
+    
+    private static final Orari defaultInstance;
+    public static Orari getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Orari getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string type = 1;
+    public static final int TYPE_FIELD_NUMBER = 1;
+    private java.lang.Object type_;
+    public boolean hasType() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getType() {
+      java.lang.Object ref = type_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          type_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getTypeBytes() {
+      java.lang.Object ref = type_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        type_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string date = 2;
+    public static final int DATE_FIELD_NUMBER = 2;
+    private java.lang.Object date_;
+    public boolean hasDate() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getDate() {
+      java.lang.Object ref = date_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          date_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDateBytes() {
+      java.lang.Object ref = date_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        date_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string from = 3;
+    public static final int FROM_FIELD_NUMBER = 3;
+    private java.lang.Object from_;
+    public boolean hasFrom() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public String getFrom() {
+      java.lang.Object ref = from_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          from_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getFromBytes() {
+      java.lang.Object ref = from_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        from_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string to = 4;
+    public static final int TO_FIELD_NUMBER = 4;
+    private java.lang.Object to_;
+    public boolean hasTo() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public String getTo() {
+      java.lang.Object ref = to_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          to_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getToBytes() {
+      java.lang.Object ref = to_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        to_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string room = 5;
+    public static final int ROOM_FIELD_NUMBER = 5;
+    private java.lang.Object room_;
+    public boolean hasRoom() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    public String getRoom() {
+      java.lang.Object ref = room_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          room_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getRoomBytes() {
+      java.lang.Object ref = room_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        room_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string teacher = 6;
+    public static final int TEACHER_FIELD_NUMBER = 6;
+    private java.lang.Object teacher_;
+    public boolean hasTeacher() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    public String getTeacher() {
+      java.lang.Object ref = teacher_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          teacher_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getTeacherBytes() {
+      java.lang.Object ref = teacher_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        teacher_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      type_ = "";
+      date_ = "";
+      from_ = "";
+      to_ = "";
+      room_ = "";
+      teacher_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDate()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasFrom()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasTo()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasRoom()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasTeacher()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getTypeBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getDateBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getFromBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, getToBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeBytes(5, getRoomBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBytes(6, getTeacherBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getTypeBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getDateBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getFromBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getToBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getRoomBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(6, getTeacherBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Orari prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.service.esse3.data.message.Esse3.OrariOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.service.esse3.data.message.Esse3.Orari.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        type_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        date_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        from_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        to_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        room_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
+        teacher_ = "";
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Orari.getDescriptor();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Orari getDefaultInstanceForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Orari.getDefaultInstance();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Orari build() {
+        smartcampus.service.esse3.data.message.Esse3.Orari result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.service.esse3.data.message.Esse3.Orari buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.service.esse3.data.message.Esse3.Orari result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Orari buildPartial() {
+        smartcampus.service.esse3.data.message.Esse3.Orari result = new smartcampus.service.esse3.data.message.Esse3.Orari(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.type_ = type_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.date_ = date_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.from_ = from_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.to_ = to_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.room_ = room_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.teacher_ = teacher_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Orari) {
+          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Orari)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Orari other) {
+        if (other == smartcampus.service.esse3.data.message.Esse3.Orari.getDefaultInstance()) return this;
+        if (other.hasType()) {
+          setType(other.getType());
+        }
+        if (other.hasDate()) {
+          setDate(other.getDate());
+        }
+        if (other.hasFrom()) {
+          setFrom(other.getFrom());
+        }
+        if (other.hasTo()) {
+          setTo(other.getTo());
+        }
+        if (other.hasRoom()) {
+          setRoom(other.getRoom());
+        }
+        if (other.hasTeacher()) {
+          setTeacher(other.getTeacher());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasType()) {
+          
+          return false;
+        }
+        if (!hasDate()) {
+          
+          return false;
+        }
+        if (!hasFrom()) {
+          
+          return false;
+        }
+        if (!hasTo()) {
+          
+          return false;
+        }
+        if (!hasRoom()) {
+          
+          return false;
+        }
+        if (!hasTeacher()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              type_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              date_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              from_ = input.readBytes();
+              break;
+            }
+            case 34: {
+              bitField0_ |= 0x00000008;
+              to_ = input.readBytes();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              room_ = input.readBytes();
+              break;
+            }
+            case 50: {
+              bitField0_ |= 0x00000020;
+              teacher_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string type = 1;
+      private java.lang.Object type_ = "";
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getType() {
+        java.lang.Object ref = type_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          type_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setType(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        type_ = getDefaultInstance().getType();
+        onChanged();
+        return this;
+      }
+      void setType(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        type_ = value;
+        onChanged();
+      }
+      
+      // required string date = 2;
+      private java.lang.Object date_ = "";
+      public boolean hasDate() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getDate() {
+        java.lang.Object ref = date_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          date_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDate(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        date_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDate() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        date_ = getDefaultInstance().getDate();
+        onChanged();
+        return this;
+      }
+      void setDate(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        date_ = value;
+        onChanged();
+      }
+      
+      // required string from = 3;
+      private java.lang.Object from_ = "";
+      public boolean hasFrom() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public String getFrom() {
+        java.lang.Object ref = from_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          from_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setFrom(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        from_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearFrom() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        from_ = getDefaultInstance().getFrom();
+        onChanged();
+        return this;
+      }
+      void setFrom(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
+        from_ = value;
+        onChanged();
+      }
+      
+      // required string to = 4;
+      private java.lang.Object to_ = "";
+      public boolean hasTo() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public String getTo() {
+        java.lang.Object ref = to_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          to_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setTo(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        to_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearTo() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        to_ = getDefaultInstance().getTo();
+        onChanged();
+        return this;
+      }
+      void setTo(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000008;
+        to_ = value;
+        onChanged();
+      }
+      
+      // required string room = 5;
+      private java.lang.Object room_ = "";
+      public boolean hasRoom() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      public String getRoom() {
+        java.lang.Object ref = room_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          room_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setRoom(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        room_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearRoom() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        room_ = getDefaultInstance().getRoom();
+        onChanged();
+        return this;
+      }
+      void setRoom(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000010;
+        room_ = value;
+        onChanged();
+      }
+      
+      // required string teacher = 6;
+      private java.lang.Object teacher_ = "";
+      public boolean hasTeacher() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      public String getTeacher() {
+        java.lang.Object ref = teacher_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          teacher_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setTeacher(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        teacher_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearTeacher() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        teacher_ = getDefaultInstance().getTeacher();
+        onChanged();
+        return this;
+      }
+      void setTeacher(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000020;
+        teacher_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Orari)
+    }
+    
+    static {
+      defaultInstance = new Orari(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Orari)
+  }
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_smartcampus_service_esse3_data_message_Student_descriptor;
   private static
@@ -6354,6 +10204,31 @@ public final class Esse3 {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_smartcampus_service_esse3_data_message_CompleteExam_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_service_esse3_data_message_Facolta_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_service_esse3_data_message_Facolta_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_service_esse3_data_message_Cds_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_service_esse3_data_message_Cds_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_service_esse3_data_message_Pds_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_service_esse3_data_message_Pds_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_service_esse3_data_message_Ad_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_service_esse3_data_message_Ad_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_service_esse3_data_message_Orari_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_service_esse3_data_message_Orari_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -6388,7 +10263,18 @@ public final class Esse3 {
       "\003 \002(\01327.smartcampus.service.esse3.data.m" +
       "essage.ExamDescription\022D\n\007teacher\030\004 \002(\0132" +
       "3.smartcampus.service.esse3.data.message" +
-      ".ExamTeacher"
+      ".ExamTeacher\"-\n\007Facolta\022\r\n\005facId\030\001 \002(\t\022\023" +
+      "\n\013description\030\002 \002(\t\"\241\001\n\003Cds\022\r\n\005cdsId\030\001 \002" +
+      "(\t\022\016\n\006cdsCod\030\002 \002(\t\022\r\n\005facId\030\003 \002(\t\022\023\n\013des" +
+      "cription\030\004 \002(\t\022\016\n\006durata\030\005 \002(\t\022\r\n\005aaOrd\030" +
+      "\006 \002(\t\0228\n\003pds\030\007 \003(\0132+.smartcampus.service",
+      ".esse3.data.message.Pds\"$\n\003Pds\022\r\n\005pdsId\030" +
+      "\001 \002(\t\022\016\n\006pdsCod\030\002 \002(\t\"X\n\002Ad\022\014\n\004adId\030\001 \002(" +
+      "\t\022\r\n\005adcod\030\002 \002(\t\022\023\n\013description\030\003 \002(\t\022\017\n" +
+      "\007fatPart\030\004 \003(\t\022\017\n\007domPart\030\005 \003(\t\"\\\n\005Orari" +
+      "\022\014\n\004type\030\001 \002(\t\022\014\n\004date\030\002 \002(\t\022\014\n\004from\030\003 \002" +
+      "(\t\022\n\n\002to\030\004 \002(\t\022\014\n\004room\030\005 \002(\t\022\017\n\007teacher\030" +
+      "\006 \002(\t"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -6451,6 +10337,46 @@ public final class Esse3 {
               new java.lang.String[] { "Cod", "AaOff", "Description", "Teacher", },
               smartcampus.service.esse3.data.message.Esse3.CompleteExam.class,
               smartcampus.service.esse3.data.message.Esse3.CompleteExam.Builder.class);
+          internal_static_smartcampus_service_esse3_data_message_Facolta_descriptor =
+            getDescriptor().getMessageTypes().get(7);
+          internal_static_smartcampus_service_esse3_data_message_Facolta_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_service_esse3_data_message_Facolta_descriptor,
+              new java.lang.String[] { "FacId", "Description", },
+              smartcampus.service.esse3.data.message.Esse3.Facolta.class,
+              smartcampus.service.esse3.data.message.Esse3.Facolta.Builder.class);
+          internal_static_smartcampus_service_esse3_data_message_Cds_descriptor =
+            getDescriptor().getMessageTypes().get(8);
+          internal_static_smartcampus_service_esse3_data_message_Cds_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_service_esse3_data_message_Cds_descriptor,
+              new java.lang.String[] { "CdsId", "CdsCod", "FacId", "Description", "Durata", "AaOrd", "Pds", },
+              smartcampus.service.esse3.data.message.Esse3.Cds.class,
+              smartcampus.service.esse3.data.message.Esse3.Cds.Builder.class);
+          internal_static_smartcampus_service_esse3_data_message_Pds_descriptor =
+            getDescriptor().getMessageTypes().get(9);
+          internal_static_smartcampus_service_esse3_data_message_Pds_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_service_esse3_data_message_Pds_descriptor,
+              new java.lang.String[] { "PdsId", "PdsCod", },
+              smartcampus.service.esse3.data.message.Esse3.Pds.class,
+              smartcampus.service.esse3.data.message.Esse3.Pds.Builder.class);
+          internal_static_smartcampus_service_esse3_data_message_Ad_descriptor =
+            getDescriptor().getMessageTypes().get(10);
+          internal_static_smartcampus_service_esse3_data_message_Ad_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_service_esse3_data_message_Ad_descriptor,
+              new java.lang.String[] { "AdId", "Adcod", "Description", "FatPart", "DomPart", },
+              smartcampus.service.esse3.data.message.Esse3.Ad.class,
+              smartcampus.service.esse3.data.message.Esse3.Ad.Builder.class);
+          internal_static_smartcampus_service_esse3_data_message_Orari_descriptor =
+            getDescriptor().getMessageTypes().get(11);
+          internal_static_smartcampus_service_esse3_data_message_Orari_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_service_esse3_data_message_Orari_descriptor,
+              new java.lang.String[] { "Type", "Date", "From", "To", "Room", "Teacher", },
+              smartcampus.service.esse3.data.message.Esse3.Orari.class,
+              smartcampus.service.esse3.data.message.Esse3.Orari.Builder.class);
           return null;
         }
       };

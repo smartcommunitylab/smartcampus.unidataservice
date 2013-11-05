@@ -26,5 +26,13 @@
 	<resourceMapping uri="smartcampus.unidataservice.operacard.app"
 		pathPattern="/getoperacard/{userId}" method="GET"/>	
 	
+	<resourceMapping uri="smartcampus.unidataservice.facolta.app"
+		pathPattern="/getfacolta" method="GET"/>
+	<resourceMapping uri="smartcampus.unidataservice.cds.app"
+		pathPattern="/getcds/{facId}" method="GET"/>		
+	<resourceMapping uri="smartcampus.unidataservice.ad.app"
+		pathPattern="/getad/{cdsId}/{aaOrd}/{aaOff}" method="GET"/>				
+	<resourceMapping uri="smartcampus.unidataservice.timetable.app"
+		pathPattern="/gettimetable/{cdscod}/{aaord}/{aaoff}/{pdsid}/{pdscod}/{adcod}/{domcod}/{fatcod}" method="GET"/>			
 
 </service>
