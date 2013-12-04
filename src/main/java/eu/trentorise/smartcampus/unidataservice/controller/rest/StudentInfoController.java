@@ -125,7 +125,7 @@ public class StudentInfoController extends RestController {
 		}
 		Map<String, Object> pars = new TreeMap<String, Object>();
 		pars.put("idAda", idAda);
-		ActionInvokeParameters resp = client.invokeService("smartcampus.service.esse3", "GetStudentData", pars);
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetStudentData", pars);
 
 		if (resp.getDataCount() == 1) {
 			Student student = Student.parseFrom(resp.getData(0));
@@ -194,7 +194,7 @@ public class StudentInfoController extends RestController {
 		}
 		Map<String, Object> pars = new TreeMap<String, Object>();
 		pars.put("idAda", idAda);
-		ActionInvokeParameters resp = client.invokeService("smartcampus.service.esse3", "GetStudentExams", pars);
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetStudentExams", pars);
 
 		List<StudentInfoExam> sie = new ArrayList<StudentInfoExam>();
 		if (resp.getDataCount() == 1) {
@@ -266,7 +266,7 @@ public class StudentInfoController extends RestController {
 
 		Map<String, Object> pars = new TreeMap<String, Object>();
 		pars.put("idGiada", idGiada);
-		ActionInvokeParameters resp = client.invokeService("smartcampus.services.dbconnector.opera", "GetOperaPayments", pars);
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.services.dbconnector.opera", "GetOperaPayments", pars);
 
 		List<StudentInfoExam> sie = new ArrayList<StudentInfoExam>();
 		if (resp.getDataCount() == 1) {
@@ -328,7 +328,7 @@ public class StudentInfoController extends RestController {
 		}
 		Map<String, Object> pars = new TreeMap<String, Object>();
 		pars.put("idAda", idAda);
-		ActionInvokeParameters resp = client.invokeService("smartcampus.service.esse3", "GetStudentData", pars);
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetStudentData", pars);
 
 		if (resp.getDataCount() == 1) {
 			Student student = Student.parseFrom(resp.getData(0));

@@ -76,7 +76,7 @@ public class Esse3Controller extends RestController {
 	}
 
 	private List<FacoltaData> getFacolta(Map<String, Object> params) throws Exception {
-		ActionInvokeParameters resp = client.invokeService("smartcampus.service.esse3", "GetFacolta", params);
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetFacolta", params);
 		List<ByteString> bsl = resp.getDataList();
 		List<FacoltaData> fsl = new ArrayList<FacoltaData>();
 		for (ByteString bs : bsl) {
@@ -101,7 +101,7 @@ public class Esse3Controller extends RestController {
 	}
 
 	private List<CdsData> getCds(Map<String, Object> params) throws Exception {
-		ActionInvokeParameters resp1 = client.invokeService("smartcampus.service.esse3", "GetCds", params);
+		ActionInvokeParameters resp1 = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetCds", params);
 		List<ByteString> bsl1 = resp1.getDataList();
 		List<CdsData> fsl = new ArrayList<CdsData>();
 		for (ByteString bs1 : bsl1) {
@@ -127,7 +127,7 @@ public class Esse3Controller extends RestController {
 	}
 
 	private List<AdData> getAd(Map<String, Object> params) throws Exception {
-		ActionInvokeParameters resp = client.invokeService("smartcampus.service.esse3", "GetAd", params);
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetAd", params);
 		List<ByteString> bsl = resp.getDataList();
 		List<AdData> fsl = new ArrayList<AdData>();
 		for (ByteString bs : bsl) {
@@ -159,7 +159,7 @@ public class Esse3Controller extends RestController {
 	}
 
 	private List<TimeTableData> getTimeTable(Map<String, Object> params) throws Exception {
-		ActionInvokeParameters resp = client.invokeService("smartcampus.service.esse3", "GetOrariAd", params);
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetOrariAd", params);
 		List<ByteString> bsl = resp.getDataList();
 		List<TimeTableData> fsl = new ArrayList<TimeTableData>();
 		for (ByteString bs : bsl) {
