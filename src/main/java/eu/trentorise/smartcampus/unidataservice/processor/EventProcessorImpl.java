@@ -15,16 +15,80 @@
  ******************************************************************************/
 package eu.trentorise.smartcampus.unidataservice.processor;
 
+import it.sayservice.platform.client.ServiceBusListener;
+
+import java.math.BigInteger;
+import java.util.Date;
 import java.util.List;
 
-import com.google.protobuf.ByteString;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 
-import it.sayservice.platform.client.ServiceBusListener;
+import smartcampus.services.dbconnector.opera.data.message.Operadb.DBDish;
+import smartcampus.services.dbconnector.opera.data.message.Operadb.DataMenu;
+
+import com.google.protobuf.ByteString;
+import com.google.protobuf.InvalidProtocolBufferException;
+
+import eu.trentorise.smartcampus.unidataservice.listener.Subscriber;
+import eu.trentorise.smartcampus.unidataservice.model.Dish;
+import eu.trentorise.smartcampus.unidataservice.model.Menu;
 
 public class EventProcessorImpl implements ServiceBusListener {
 
+	@Autowired
+	private MongoTemplate mongoTemplate;
+
+	private static Log logger = LogFactory.getLog(EventProcessorImpl.class);
+
 	@Override
 	public void onServiceEvents(String serviceId, String methodName, String subscriptionId, List<ByteString> data) {
+		try {
+			if (Subscriber.OPERA.equals(serviceId)) {
+				if (Subscriber.GET_MENU.equals(methodName)) {
+					updateMenu(data);
+				}
+			}
+		} catch (Exception e) {
+			logger.error("Error updating " + methodName);
+			e.printStackTrace();
+		}
 	}
 
+	private void updateMenu(List<ByteString> data) throws InvalidProtocolBufferException {
+		for (ByteString bs : data) {
+			DataMenu dm = DataMenu.parseFrom(bs);
+			Menu menu = new Menu();
+			
+			menu.setDate(dm.getDate());
+			menu.setType(dm.getType());
+			menu.setId(encode(dm.getDate() + "_" + dm.getType()));
+			
+			for (DBDish dd: dm.getDishesList()) {
+				Dish dish = new Dish();
+				dish.setCal(dd.getCal());
+				dish.setName(dd.getNome());
+				
+				menu.getDishes().add(dish);
+
+			}
+			
+			mongoTemplate.save(menu, "menu");
+		}
+	}
+
+	public MongoTemplate getMongoTemplate() {
+		return mongoTemplate;
+	}
+
+	public void setMongoTemplate(MongoTemplate mongoTemplate) {
+		this.mongoTemplate = mongoTemplate;
+	}	
+	
+	private static String encode(String s) {
+		return new BigInteger(s.getBytes()).toString(16);
+	}
+	
 }

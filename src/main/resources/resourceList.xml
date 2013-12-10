@@ -35,4 +35,7 @@
 	<resourceMapping uri="smartcampus.unidataservice.timetable.app"
 		pathPattern="/gettimetable/{cdscod}/{aaord}/{aaoff}/{pdsid}/{pdscod}/{adcod}/{domcod}/{fatcod}" method="GET"/>			
 
+	<resourceMapping uri="smartcampus.unidataservice.data.app"
+		pathPattern="/data/getmenu/{from}/{to}" method="GET"/>	
+	
 </service>
