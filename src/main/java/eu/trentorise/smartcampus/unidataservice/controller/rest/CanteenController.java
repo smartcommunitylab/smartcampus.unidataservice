@@ -36,6 +36,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mongodb.QueryBuilder;
 
+import eu.trentorise.smartcampus.unidataservice.model.CanteenOpening;
 import eu.trentorise.smartcampus.unidataservice.model.Menu;
 
 @Controller
@@ -71,6 +72,19 @@ public class CanteenController extends RestController {
 		return null;
 	}
 
+	@RequestMapping(method = RequestMethod.GET, value = "/data/getopening")
+	public @ResponseBody
+	List<CanteenOpening> getMenu(HttpServletRequest request, HttpServletResponse response) throws InvocationException {
+		try {
+			List<CanteenOpening> result = mongoTemplate.findAll(CanteenOpening.class, "opening");
+			
+			return result;
+		} catch (Exception e) {
+			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+		}
+		return null;
+	}	
+	
 	public MongoTemplate getMongoTemplate() {
 		return mongoTemplate;
 	}

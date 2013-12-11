@@ -27,6 +27,7 @@ import org.apache.commons.logging.LogFactory;
 public class Subscriber {
 
 	public static final String GET_MENU = "GetMenu";
+	public static final String GET_APERTURE = "GetAperture";
 
 	public static final String OPERA = "smartcampus.services.dbconnector.opera";
 	
@@ -37,6 +38,7 @@ public class Subscriber {
 			System.out.println("SUBSCRIBE");
 			Map<String, Object> params = new TreeMap<String, Object>();
 			client.subscribeService(OPERA, GET_MENU, params);
+			client.subscribeService(OPERA, GET_APERTURE, params);
 		} catch (InvocationException e) {
 			logger.error("Failed to subscribe for service events: " + e.getMessage());
 		}

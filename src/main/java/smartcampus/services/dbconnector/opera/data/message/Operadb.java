@@ -6716,6 +6716,1959 @@ public final class Operadb {
     // @@protoc_insertion_point(class_scope:smartcampus.services.dbconnector.opera.data.message.DataMenu)
   }
   
+  public interface DBAperturaOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string id = 1;
+    boolean hasId();
+    String getId();
+    
+    // required string data = 2;
+    boolean hasData();
+    String getData();
+    
+    // required string giorni = 3;
+    boolean hasGiorni();
+    String getGiorni();
+    
+    // required string descrmensa = 4;
+    boolean hasDescrmensa();
+    String getDescrmensa();
+    
+    // required string descrzona = 5;
+    boolean hasDescrzona();
+    String getDescrzona();
+  }
+  public static final class DBApertura extends
+      com.google.protobuf.GeneratedMessage
+      implements DBAperturaOrBuilder {
+    // Use DBApertura.newBuilder() to construct.
+    private DBApertura(Builder builder) {
+      super(builder);
+    }
+    private DBApertura(boolean noInit) {}
+    
+    private static final DBApertura defaultInstance;
+    public static DBApertura getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public DBApertura getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string id = 1;
+    public static final int ID_FIELD_NUMBER = 1;
+    private java.lang.Object id_;
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          id_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string data = 2;
+    public static final int DATA_FIELD_NUMBER = 2;
+    private java.lang.Object data_;
+    public boolean hasData() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getData() {
+      java.lang.Object ref = data_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          data_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDataBytes() {
+      java.lang.Object ref = data_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        data_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string giorni = 3;
+    public static final int GIORNI_FIELD_NUMBER = 3;
+    private java.lang.Object giorni_;
+    public boolean hasGiorni() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public String getGiorni() {
+      java.lang.Object ref = giorni_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          giorni_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getGiorniBytes() {
+      java.lang.Object ref = giorni_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        giorni_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string descrmensa = 4;
+    public static final int DESCRMENSA_FIELD_NUMBER = 4;
+    private java.lang.Object descrmensa_;
+    public boolean hasDescrmensa() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public String getDescrmensa() {
+      java.lang.Object ref = descrmensa_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          descrmensa_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDescrmensaBytes() {
+      java.lang.Object ref = descrmensa_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        descrmensa_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string descrzona = 5;
+    public static final int DESCRZONA_FIELD_NUMBER = 5;
+    private java.lang.Object descrzona_;
+    public boolean hasDescrzona() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    public String getDescrzona() {
+      java.lang.Object ref = descrzona_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          descrzona_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDescrzonaBytes() {
+      java.lang.Object ref = descrzona_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        descrzona_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      id_ = "";
+      data_ = "";
+      giorni_ = "";
+      descrmensa_ = "";
+      descrzona_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasData()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasGiorni()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDescrmensa()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDescrzona()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getDataBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getGiorniBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, getDescrmensaBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeBytes(5, getDescrzonaBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getDataBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getGiorniBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getDescrmensaBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getDescrzonaBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.services.dbconnector.opera.data.message.Operadb.DBAperturaOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        id_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        data_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        giorni_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        descrmensa_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        descrzona_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura.getDescriptor();
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura getDefaultInstanceForType() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura.getDefaultInstance();
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura build() {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura buildPartial() {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura result = new smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.id_ = id_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.data_ = data_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.giorni_ = giorni_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.descrmensa_ = descrmensa_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.descrzona_ = descrzona_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura) {
+          return mergeFrom((smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura other) {
+        if (other == smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura.getDefaultInstance()) return this;
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        if (other.hasData()) {
+          setData(other.getData());
+        }
+        if (other.hasGiorni()) {
+          setGiorni(other.getGiorni());
+        }
+        if (other.hasDescrmensa()) {
+          setDescrmensa(other.getDescrmensa());
+        }
+        if (other.hasDescrzona()) {
+          setDescrzona(other.getDescrzona());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasId()) {
+          
+          return false;
+        }
+        if (!hasData()) {
+          
+          return false;
+        }
+        if (!hasGiorni()) {
+          
+          return false;
+        }
+        if (!hasDescrmensa()) {
+          
+          return false;
+        }
+        if (!hasDescrzona()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              id_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              data_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              giorni_ = input.readBytes();
+              break;
+            }
+            case 34: {
+              bitField0_ |= 0x00000008;
+              descrmensa_ = input.readBytes();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              descrzona_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string id = 1;
+      private java.lang.Object id_ = "";
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          id_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setId(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = getDefaultInstance().getId();
+        onChanged();
+        return this;
+      }
+      void setId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+      }
+      
+      // required string data = 2;
+      private java.lang.Object data_ = "";
+      public boolean hasData() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getData() {
+        java.lang.Object ref = data_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          data_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setData(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        data_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearData() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        data_ = getDefaultInstance().getData();
+        onChanged();
+        return this;
+      }
+      void setData(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        data_ = value;
+        onChanged();
+      }
+      
+      // required string giorni = 3;
+      private java.lang.Object giorni_ = "";
+      public boolean hasGiorni() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public String getGiorni() {
+        java.lang.Object ref = giorni_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          giorni_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setGiorni(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        giorni_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearGiorni() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        giorni_ = getDefaultInstance().getGiorni();
+        onChanged();
+        return this;
+      }
+      void setGiorni(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
+        giorni_ = value;
+        onChanged();
+      }
+      
+      // required string descrmensa = 4;
+      private java.lang.Object descrmensa_ = "";
+      public boolean hasDescrmensa() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public String getDescrmensa() {
+        java.lang.Object ref = descrmensa_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          descrmensa_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDescrmensa(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        descrmensa_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDescrmensa() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        descrmensa_ = getDefaultInstance().getDescrmensa();
+        onChanged();
+        return this;
+      }
+      void setDescrmensa(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000008;
+        descrmensa_ = value;
+        onChanged();
+      }
+      
+      // required string descrzona = 5;
+      private java.lang.Object descrzona_ = "";
+      public boolean hasDescrzona() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      public String getDescrzona() {
+        java.lang.Object ref = descrzona_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          descrzona_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDescrzona(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        descrzona_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDescrzona() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        descrzona_ = getDefaultInstance().getDescrzona();
+        onChanged();
+        return this;
+      }
+      void setDescrzona(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000010;
+        descrzona_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.services.dbconnector.opera.data.message.DBApertura)
+    }
+    
+    static {
+      defaultInstance = new DBApertura(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.services.dbconnector.opera.data.message.DBApertura)
+  }
+  
+  public interface DataOpeningOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string descrzona = 1;
+    boolean hasDescrzona();
+    String getDescrzona();
+    
+    // repeated .smartcampus.services.dbconnector.opera.data.message.DataOpeningCanteen openings = 2;
+    java.util.List<smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen> 
+        getOpeningsList();
+    smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen getOpenings(int index);
+    int getOpeningsCount();
+    java.util.List<? extends smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder> 
+        getOpeningsOrBuilderList();
+    smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder getOpeningsOrBuilder(
+        int index);
+  }
+  public static final class DataOpening extends
+      com.google.protobuf.GeneratedMessage
+      implements DataOpeningOrBuilder {
+    // Use DataOpening.newBuilder() to construct.
+    private DataOpening(Builder builder) {
+      super(builder);
+    }
+    private DataOpening(boolean noInit) {}
+    
+    private static final DataOpening defaultInstance;
+    public static DataOpening getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public DataOpening getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string descrzona = 1;
+    public static final int DESCRZONA_FIELD_NUMBER = 1;
+    private java.lang.Object descrzona_;
+    public boolean hasDescrzona() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getDescrzona() {
+      java.lang.Object ref = descrzona_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          descrzona_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDescrzonaBytes() {
+      java.lang.Object ref = descrzona_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        descrzona_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // repeated .smartcampus.services.dbconnector.opera.data.message.DataOpeningCanteen openings = 2;
+    public static final int OPENINGS_FIELD_NUMBER = 2;
+    private java.util.List<smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen> openings_;
+    public java.util.List<smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen> getOpeningsList() {
+      return openings_;
+    }
+    public java.util.List<? extends smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder> 
+        getOpeningsOrBuilderList() {
+      return openings_;
+    }
+    public int getOpeningsCount() {
+      return openings_.size();
+    }
+    public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen getOpenings(int index) {
+      return openings_.get(index);
+    }
+    public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder getOpeningsOrBuilder(
+        int index) {
+      return openings_.get(index);
+    }
+    
+    private void initFields() {
+      descrzona_ = "";
+      openings_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasDescrzona()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getOpeningsCount(); i++) {
+        if (!getOpenings(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getDescrzonaBytes());
+      }
+      for (int i = 0; i < openings_.size(); i++) {
+        output.writeMessage(2, openings_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getDescrzonaBytes());
+      }
+      for (int i = 0; i < openings_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, openings_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getOpeningsFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        descrzona_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (openingsBuilder_ == null) {
+          openings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          openingsBuilder_.clear();
+        }
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening.getDescriptor();
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening getDefaultInstanceForType() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening.getDefaultInstance();
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening build() {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening buildPartial() {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening result = new smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.descrzona_ = descrzona_;
+        if (openingsBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            openings_ = java.util.Collections.unmodifiableList(openings_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.openings_ = openings_;
+        } else {
+          result.openings_ = openingsBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening) {
+          return mergeFrom((smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening other) {
+        if (other == smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening.getDefaultInstance()) return this;
+        if (other.hasDescrzona()) {
+          setDescrzona(other.getDescrzona());
+        }
+        if (openingsBuilder_ == null) {
+          if (!other.openings_.isEmpty()) {
+            if (openings_.isEmpty()) {
+              openings_ = other.openings_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureOpeningsIsMutable();
+              openings_.addAll(other.openings_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.openings_.isEmpty()) {
+            if (openingsBuilder_.isEmpty()) {
+              openingsBuilder_.dispose();
+              openingsBuilder_ = null;
+              openings_ = other.openings_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              openingsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getOpeningsFieldBuilder() : null;
+            } else {
+              openingsBuilder_.addAllMessages(other.openings_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasDescrzona()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getOpeningsCount(); i++) {
+          if (!getOpenings(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              descrzona_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder subBuilder = smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addOpenings(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string descrzona = 1;
+      private java.lang.Object descrzona_ = "";
+      public boolean hasDescrzona() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getDescrzona() {
+        java.lang.Object ref = descrzona_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          descrzona_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDescrzona(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        descrzona_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDescrzona() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        descrzona_ = getDefaultInstance().getDescrzona();
+        onChanged();
+        return this;
+      }
+      void setDescrzona(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        descrzona_ = value;
+        onChanged();
+      }
+      
+      // repeated .smartcampus.services.dbconnector.opera.data.message.DataOpeningCanteen openings = 2;
+      private java.util.List<smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen> openings_ =
+        java.util.Collections.emptyList();
+      private void ensureOpeningsIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          openings_ = new java.util.ArrayList<smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen>(openings_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder> openingsBuilder_;
+      
+      public java.util.List<smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen> getOpeningsList() {
+        if (openingsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(openings_);
+        } else {
+          return openingsBuilder_.getMessageList();
+        }
+      }
+      public int getOpeningsCount() {
+        if (openingsBuilder_ == null) {
+          return openings_.size();
+        } else {
+          return openingsBuilder_.getCount();
+        }
+      }
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen getOpenings(int index) {
+        if (openingsBuilder_ == null) {
+          return openings_.get(index);
+        } else {
+          return openingsBuilder_.getMessage(index);
+        }
+      }
+      public Builder setOpenings(
+          int index, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen value) {
+        if (openingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOpeningsIsMutable();
+          openings_.set(index, value);
+          onChanged();
+        } else {
+          openingsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setOpenings(
+          int index, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder builderForValue) {
+        if (openingsBuilder_ == null) {
+          ensureOpeningsIsMutable();
+          openings_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          openingsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addOpenings(smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen value) {
+        if (openingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOpeningsIsMutable();
+          openings_.add(value);
+          onChanged();
+        } else {
+          openingsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addOpenings(
+          int index, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen value) {
+        if (openingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOpeningsIsMutable();
+          openings_.add(index, value);
+          onChanged();
+        } else {
+          openingsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addOpenings(
+          smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder builderForValue) {
+        if (openingsBuilder_ == null) {
+          ensureOpeningsIsMutable();
+          openings_.add(builderForValue.build());
+          onChanged();
+        } else {
+          openingsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addOpenings(
+          int index, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder builderForValue) {
+        if (openingsBuilder_ == null) {
+          ensureOpeningsIsMutable();
+          openings_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          openingsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllOpenings(
+          java.lang.Iterable<? extends smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen> values) {
+        if (openingsBuilder_ == null) {
+          ensureOpeningsIsMutable();
+          super.addAll(values, openings_);
+          onChanged();
+        } else {
+          openingsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearOpenings() {
+        if (openingsBuilder_ == null) {
+          openings_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          openingsBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeOpenings(int index) {
+        if (openingsBuilder_ == null) {
+          ensureOpeningsIsMutable();
+          openings_.remove(index);
+          onChanged();
+        } else {
+          openingsBuilder_.remove(index);
+        }
+        return this;
+      }
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder getOpeningsBuilder(
+          int index) {
+        return getOpeningsFieldBuilder().getBuilder(index);
+      }
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder getOpeningsOrBuilder(
+          int index) {
+        if (openingsBuilder_ == null) {
+          return openings_.get(index);  } else {
+          return openingsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder> 
+           getOpeningsOrBuilderList() {
+        if (openingsBuilder_ != null) {
+          return openingsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(openings_);
+        }
+      }
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder addOpeningsBuilder() {
+        return getOpeningsFieldBuilder().addBuilder(
+            smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.getDefaultInstance());
+      }
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder addOpeningsBuilder(
+          int index) {
+        return getOpeningsFieldBuilder().addBuilder(
+            index, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.getDefaultInstance());
+      }
+      public java.util.List<smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder> 
+           getOpeningsBuilderList() {
+        return getOpeningsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder> 
+          getOpeningsFieldBuilder() {
+        if (openingsBuilder_ == null) {
+          openingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder, smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder>(
+                  openings_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          openings_ = null;
+        }
+        return openingsBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.services.dbconnector.opera.data.message.DataOpening)
+    }
+    
+    static {
+      defaultInstance = new DataOpening(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.services.dbconnector.opera.data.message.DataOpening)
+  }
+  
+  public interface DataOpeningCanteenOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string descrmensa = 1;
+    boolean hasDescrmensa();
+    String getDescrmensa();
+    
+    // repeated string date = 2;
+    java.util.List<String> getDateList();
+    int getDateCount();
+    String getDate(int index);
+  }
+  public static final class DataOpeningCanteen extends
+      com.google.protobuf.GeneratedMessage
+      implements DataOpeningCanteenOrBuilder {
+    // Use DataOpeningCanteen.newBuilder() to construct.
+    private DataOpeningCanteen(Builder builder) {
+      super(builder);
+    }
+    private DataOpeningCanteen(boolean noInit) {}
+    
+    private static final DataOpeningCanteen defaultInstance;
+    public static DataOpeningCanteen getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public DataOpeningCanteen getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string descrmensa = 1;
+    public static final int DESCRMENSA_FIELD_NUMBER = 1;
+    private java.lang.Object descrmensa_;
+    public boolean hasDescrmensa() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getDescrmensa() {
+      java.lang.Object ref = descrmensa_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          descrmensa_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getDescrmensaBytes() {
+      java.lang.Object ref = descrmensa_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        descrmensa_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // repeated string date = 2;
+    public static final int DATE_FIELD_NUMBER = 2;
+    private com.google.protobuf.LazyStringList date_;
+    public java.util.List<String>
+        getDateList() {
+      return date_;
+    }
+    public int getDateCount() {
+      return date_.size();
+    }
+    public String getDate(int index) {
+      return date_.get(index);
+    }
+    
+    private void initFields() {
+      descrmensa_ = "";
+      date_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasDescrmensa()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getDescrmensaBytes());
+      }
+      for (int i = 0; i < date_.size(); i++) {
+        output.writeBytes(2, date_.getByteString(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getDescrmensaBytes());
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < date_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeBytesSizeNoTag(date_.getByteString(i));
+        }
+        size += dataSize;
+        size += 1 * getDateList().size();
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteenOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        descrmensa_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        date_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.getDescriptor();
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen getDefaultInstanceForType() {
+        return smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.getDefaultInstance();
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen build() {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen buildPartial() {
+        smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen result = new smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.descrmensa_ = descrmensa_;
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          date_ = new com.google.protobuf.UnmodifiableLazyStringList(
+              date_);
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.date_ = date_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen) {
+          return mergeFrom((smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen other) {
+        if (other == smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.getDefaultInstance()) return this;
+        if (other.hasDescrmensa()) {
+          setDescrmensa(other.getDescrmensa());
+        }
+        if (!other.date_.isEmpty()) {
+          if (date_.isEmpty()) {
+            date_ = other.date_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureDateIsMutable();
+            date_.addAll(other.date_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasDescrmensa()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              descrmensa_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              ensureDateIsMutable();
+              date_.add(input.readBytes());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string descrmensa = 1;
+      private java.lang.Object descrmensa_ = "";
+      public boolean hasDescrmensa() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getDescrmensa() {
+        java.lang.Object ref = descrmensa_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          descrmensa_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setDescrmensa(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        descrmensa_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDescrmensa() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        descrmensa_ = getDefaultInstance().getDescrmensa();
+        onChanged();
+        return this;
+      }
+      void setDescrmensa(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        descrmensa_ = value;
+        onChanged();
+      }
+      
+      // repeated string date = 2;
+      private com.google.protobuf.LazyStringList date_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureDateIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          date_ = new com.google.protobuf.LazyStringArrayList(date_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      public java.util.List<String>
+          getDateList() {
+        return java.util.Collections.unmodifiableList(date_);
+      }
+      public int getDateCount() {
+        return date_.size();
+      }
+      public String getDate(int index) {
+        return date_.get(index);
+      }
+      public Builder setDate(
+          int index, String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDateIsMutable();
+        date_.set(index, value);
+        onChanged();
+        return this;
+      }
+      public Builder addDate(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDateIsMutable();
+        date_.add(value);
+        onChanged();
+        return this;
+      }
+      public Builder addAllDate(
+          java.lang.Iterable<String> values) {
+        ensureDateIsMutable();
+        super.addAll(values, date_);
+        onChanged();
+        return this;
+      }
+      public Builder clearDate() {
+        date_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      void addDate(com.google.protobuf.ByteString value) {
+        ensureDateIsMutable();
+        date_.add(value);
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.services.dbconnector.opera.data.message.DataOpeningCanteen)
+    }
+    
+    static {
+      defaultInstance = new DataOpeningCanteen(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.services.dbconnector.opera.data.message.DataOpeningCanteen)
+  }
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_smartcampus_services_dbconnector_opera_data_message_DBPayment_descriptor;
   private static
@@ -6746,6 +8699,21 @@ public final class Operadb {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_smartcampus_services_dbconnector_opera_data_message_DataMenu_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -6786,7 +8754,14 @@ public final class Operadb {
       "id\030\001 \002(\t\022\014\n\004data\030\002 \002(\t\022\r\n\005pasto\030\003 \002(\t\"s\n" +
       "\010DataMenu\022\014\n\004date\030\001 \002(\t\022\014\n\004type\030\002 \002(\t\022K\n",
       "\006dishes\030\003 \003(\0132;.smartcampus.services.dbc" +
-      "onnector.opera.data.message.DBDish"
+      "onnector.opera.data.message.DBDish\"]\n\nDB" +
+      "Apertura\022\n\n\002id\030\001 \002(\t\022\014\n\004data\030\002 \002(\t\022\016\n\006gi" +
+      "orni\030\003 \002(\t\022\022\n\ndescrmensa\030\004 \002(\t\022\021\n\tdescrz" +
+      "ona\030\005 \002(\t\"{\n\013DataOpening\022\021\n\tdescrzona\030\001 " +
+      "\002(\t\022Y\n\010openings\030\002 \003(\0132G.smartcampus.serv" +
+      "ices.dbconnector.opera.data.message.Data" +
+      "OpeningCanteen\"6\n\022DataOpeningCanteen\022\022\n\n" +
+      "descrmensa\030\001 \002(\t\022\014\n\004date\030\002 \003(\t"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -6841,6 +8816,30 @@ public final class Operadb {
               new java.lang.String[] { "Date", "Type", "Dishes", },
               smartcampus.services.dbconnector.opera.data.message.Operadb.DataMenu.class,
               smartcampus.services.dbconnector.opera.data.message.Operadb.DataMenu.Builder.class);
+          internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_descriptor =
+            getDescriptor().getMessageTypes().get(6);
+          internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_services_dbconnector_opera_data_message_DBApertura_descriptor,
+              new java.lang.String[] { "Id", "Data", "Giorni", "Descrmensa", "Descrzona", },
+              smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura.class,
+              smartcampus.services.dbconnector.opera.data.message.Operadb.DBApertura.Builder.class);
+          internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_descriptor =
+            getDescriptor().getMessageTypes().get(7);
+          internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpening_descriptor,
+              new java.lang.String[] { "Descrzona", "Openings", },
+              smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening.class,
+              smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening.Builder.class);
+          internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_descriptor =
+            getDescriptor().getMessageTypes().get(8);
+          internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_services_dbconnector_opera_data_message_DataOpeningCanteen_descriptor,
+              new java.lang.String[] { "Descrmensa", "Date", },
+              smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.class,
+              smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen.Builder.class);
           return null;
         }
       };

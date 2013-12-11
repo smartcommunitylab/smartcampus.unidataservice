@@ -18,8 +18,9 @@ package eu.trentorise.smartcampus.unidataservice.processor;
 import it.sayservice.platform.client.ServiceBusListener;
 
 import java.math.BigInteger;
-import java.util.Date;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -28,11 +29,16 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 
 import smartcampus.services.dbconnector.opera.data.message.Operadb.DBDish;
 import smartcampus.services.dbconnector.opera.data.message.Operadb.DataMenu;
+import smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpening;
+import smartcampus.services.dbconnector.opera.data.message.Operadb.DataOpeningCanteen;
 
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
+import edu.emory.mathcs.backport.java.util.Collections;
 import eu.trentorise.smartcampus.unidataservice.listener.Subscriber;
+import eu.trentorise.smartcampus.unidataservice.model.CanteenOpening;
+import eu.trentorise.smartcampus.unidataservice.model.CanteenOpeningTimes;
 import eu.trentorise.smartcampus.unidataservice.model.Dish;
 import eu.trentorise.smartcampus.unidataservice.model.Menu;
 
@@ -49,6 +55,8 @@ public class EventProcessorImpl implements ServiceBusListener {
 			if (Subscriber.OPERA.equals(serviceId)) {
 				if (Subscriber.GET_MENU.equals(methodName)) {
 					updateMenu(data);
+				} else if (Subscriber.GET_APERTURE.equals(methodName)) {
+					updateAperture(data);
 				}
 			}
 		} catch (Exception e) {
@@ -61,22 +69,58 @@ public class EventProcessorImpl implements ServiceBusListener {
 		for (ByteString bs : data) {
 			DataMenu dm = DataMenu.parseFrom(bs);
 			Menu menu = new Menu();
-			
+
 			menu.setDate(dm.getDate());
 			menu.setType(dm.getType());
 			menu.setId(encode(dm.getDate() + "_" + dm.getType()));
-			
-			for (DBDish dd: dm.getDishesList()) {
+
+			for (DBDish dd : dm.getDishesList()) {
 				Dish dish = new Dish();
 				dish.setCal(dd.getCal());
 				dish.setName(dd.getNome());
-				
+
 				menu.getDishes().add(dish);
 
 			}
-			
+
 			mongoTemplate.save(menu, "menu");
 		}
+	}
+
+	private void updateAperture(List<ByteString> data) throws InvalidProtocolBufferException {
+		for (ByteString bs : data) {
+			DataOpening da = DataOpening.parseFrom(bs);
+
+			CanteenOpening opening = new CanteenOpening();
+			opening.setCanteen(da.getDescrzona());
+			opening.setId(encode(da.getDescrzona()));
+
+			Map<String, CanteenOpeningTimes> zones = new TreeMap<String, CanteenOpeningTimes>();
+			for (DataOpeningCanteen dac : da.getOpeningsList()) {
+				CanteenOpeningTimes times;
+				if (zones.containsKey(dac.getDescrmensa())) {
+					times = zones.get(dac.getDescrmensa());
+				} else {
+					times = new CanteenOpeningTimes();
+					zones.put(dac.getDescrmensa(), times);
+				}
+
+				times.setType(dac.getDescrmensa());
+
+				for (String d : dac.getDateList()) {
+					times.getDates().add(d);
+				}
+
+				Collections.sort(times.getDates());
+				if (!opening.getTimes().contains(times)) {
+					opening.getTimes().add(times);
+				}
+
+			}
+
+			mongoTemplate.save(opening, "opening");
+		}
+
 	}
 
 	public MongoTemplate getMongoTemplate() {
@@ -85,10 +129,10 @@ public class EventProcessorImpl implements ServiceBusListener {
 
 	public void setMongoTemplate(MongoTemplate mongoTemplate) {
 		this.mongoTemplate = mongoTemplate;
-	}	
-	
+	}
+
 	private static String encode(String s) {
 		return new BigInteger(s.getBytes()).toString(16);
 	}
-	
+
 }

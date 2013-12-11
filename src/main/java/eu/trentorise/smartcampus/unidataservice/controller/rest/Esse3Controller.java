@@ -70,6 +70,7 @@ public class Esse3Controller extends RestController {
 			Map<String, Object> params = new TreeMap<String, Object>();
 			return getFacolta(params);
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
@@ -95,6 +96,7 @@ public class Esse3Controller extends RestController {
 			params.put("facId", facId);
 			return getCds(params);
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
@@ -121,6 +123,7 @@ public class Esse3Controller extends RestController {
 			params.put("aaOff", aaOff);
 			return getAd(params);
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
@@ -153,6 +156,7 @@ public class Esse3Controller extends RestController {
 			params.put("fatCod", fatcod);
 			return getTimeTable(params);
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;

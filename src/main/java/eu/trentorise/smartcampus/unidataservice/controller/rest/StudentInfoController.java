@@ -88,6 +88,7 @@ public class StudentInfoController extends RestController {
 
 			return null;
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
@@ -114,6 +115,7 @@ public class StudentInfoController extends RestController {
 
 			return null;
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
@@ -158,6 +160,7 @@ public class StudentInfoController extends RestController {
 			}
 
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
@@ -183,6 +186,7 @@ public class StudentInfoController extends RestController {
 			}
 
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
@@ -227,6 +231,7 @@ public class StudentInfoController extends RestController {
 			}
 
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
@@ -252,6 +257,7 @@ public class StudentInfoController extends RestController {
 			}
 
 		} catch (Exception e) {
+			e.printStackTrace();
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
 		return null;
