@@ -78,7 +78,8 @@ public class EventProcessorImpl implements ServiceBusListener {
 				Dish dish = new Dish();
 				dish.setCal(dd.getCal());
 				dish.setName(dd.getNome());
-
+				dish.setId(dd.getId());
+				
 				menu.getDishes().add(dish);
 
 			}
