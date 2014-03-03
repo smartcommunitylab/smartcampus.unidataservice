@@ -19,9 +19,7 @@ import it.sayservice.platform.client.InvocationException;
 import it.sayservice.platform.client.ServiceBusClient;
 import it.sayservice.platform.core.message.Core.ActionInvokeParameters;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -39,20 +37,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import smartcampus.service.esse3.data.message.Esse3.Ad;
+import smartcampus.service.esse3.data.message.Esse3.CalendarCds;
 import smartcampus.service.esse3.data.message.Esse3.Cds;
 import smartcampus.service.esse3.data.message.Esse3.Facolta;
 import smartcampus.service.esse3.data.message.Esse3.Orari;
-import smartcampus.service.esse3.data.message.Esse3.Pds;
 
 import com.google.protobuf.ByteString;
-import com.google.protobuf.Message;
-import com.googlecode.protobuf.format.JsonFormat;
 
 import edu.emory.mathcs.backport.java.util.Collections;
 import eu.trentorise.smartcampus.unidataservice.model.AdData;
+import eu.trentorise.smartcampus.unidataservice.model.CalendarCdsData;
 import eu.trentorise.smartcampus.unidataservice.model.CdsData;
 import eu.trentorise.smartcampus.unidataservice.model.FacoltaData;
-import eu.trentorise.smartcampus.unidataservice.model.PdsData;
 import eu.trentorise.smartcampus.unidataservice.model.TimeTableData;
 
 @Controller
@@ -161,7 +157,7 @@ public class Esse3Controller extends RestController {
 		}
 		return null;
 	}
-
+	
 	private List<TimeTableData> getTimeTable(Map<String, Object> params) throws Exception {
 		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetOrariAd", params);
 		List<ByteString> bsl = resp.getDataList();
@@ -173,6 +169,35 @@ public class Esse3Controller extends RestController {
 
 		Collections.sort(fsl);
 		return fsl;
-	}
+	}	
+
+	@RequestMapping(method = RequestMethod.GET, value = "/getcdscalendar/{cdsid}/{year}")
+	public @ResponseBody
+	List<CalendarCdsData> getCdsCalendar(HttpServletRequest request, HttpServletResponse response, HttpSession session, @PathVariable String cdsid, @PathVariable String year) {
+		try {
+
+			Map<String, Object> params = new TreeMap<String, Object>();
+			params.put("cdsId", cdsid);
+			params.put("anno", year);
+			return getCdsCalendar(params);
+		} catch (Exception e) {
+			e.printStackTrace();
+			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+		}
+		return null;
+	}	
+	
+	private List<CalendarCdsData> getCdsCalendar(Map<String, Object> params) throws Exception {
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetCalendarioCds", params);
+		List<ByteString> bsl = resp.getDataList();
+		List<CalendarCdsData> cc = new ArrayList<CalendarCdsData>();
+		for (ByteString bs : bsl) {
+			CalendarCds or = CalendarCds.parseFrom(bs);
+			cc.add(new CalendarCdsData(or));
+		}
+
+		return cc;
+	}		
+
 
 }

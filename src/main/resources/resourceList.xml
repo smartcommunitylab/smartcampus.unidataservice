@@ -33,7 +33,9 @@
 	<resourceMapping uri="smartcampus.unidataservice.ad.app"
 		pathPattern="/getad/{cdsId}/{aaOrd}/{aaOff}" method="GET"/>				
 	<resourceMapping uri="smartcampus.unidataservice.timetable.app"
-		pathPattern="/gettimetable/{cdscod}/{aaord}/{aaoff}/{pdsid}/{pdscod}/{adcod}/{domcod}/{fatcod}" method="GET"/>			
+		pathPattern="/gettimetable/{cdscod}/{aaord}/{aaoff}/{pdsid}/{pdscod}/{adcod}/{domcod}/{fatcod}" method="GET"/>
+	<resourceMapping uri="smartcampus.unidataservice.calendarcds.app"
+		pathPattern="/getcdscalendar/{cdsid}/{year}" method="GET"/>				
 
 	<resourceMapping uri="smartcampus.unidataservice.menu.app"
 		pathPattern="/data/getmenu/{from}/{to}" method="GET"/>
