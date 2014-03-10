@@ -26,20 +26,20 @@
 	<resourceMapping uri="smartcampus.unidataservice.operacard.app"
 		pathPattern="/getoperacard/{userId}" method="GET"/>	
 	
-	<resourceMapping uri="smartcampus.unidataservice.facolta.app"
+	<resourceMapping uri="smartcampus.unidataservice.courses"
 		pathPattern="/getfacolta" method="GET"/>
-	<resourceMapping uri="smartcampus.unidataservice.cds.app"
+	<resourceMapping uri="smartcampus.unidataservice.courses"
 		pathPattern="/getcds/{facId}" method="GET"/>		
-	<resourceMapping uri="smartcampus.unidataservice.ad.app"
+	<resourceMapping uri="smartcampus.unidataservice.courses"
 		pathPattern="/getad/{cdsId}/{aaOrd}/{aaOff}" method="GET"/>				
-	<resourceMapping uri="smartcampus.unidataservice.timetable.app"
+	<resourceMapping uri="smartcampus.unidataservice.courses"
 		pathPattern="/gettimetable/{cdscod}/{aaord}/{aaoff}/{pdsid}/{pdscod}/{adcod}/{domcod}/{fatcod}" method="GET"/>
-	<resourceMapping uri="smartcampus.unidataservice.calendarcds.app"
+	<resourceMapping uri="smartcampus.unidataservice.courses"
 		pathPattern="/getcdscalendar/{cdsid}/{year}" method="GET"/>				
 
-	<resourceMapping uri="smartcampus.unidataservice.menu.app"
+	<resourceMapping uri="smartcampus.unidataservice.canteen"
 		pathPattern="/data/getmenu/{from}/{to}" method="GET"/>
-	<resourceMapping uri="smartcampus.unidataservice.opening.app"
+	<resourceMapping uri="smartcampus.unidataservice.canteen"
 		pathPattern="/data/getopening" method="GET"/>			
 	
 </service>

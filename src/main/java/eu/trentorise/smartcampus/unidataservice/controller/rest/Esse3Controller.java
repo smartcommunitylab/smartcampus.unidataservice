@@ -187,6 +187,22 @@ public class Esse3Controller extends RestController {
 		return null;
 	}	
 	
+	@RequestMapping(method = RequestMethod.GET, value = "/getcompletecdscalendar/{cdsid}/{year}")
+	public @ResponseBody
+	List<CalendarCdsData> getCompleteCdsCalendar(HttpServletRequest request, HttpServletResponse response, HttpSession session, @PathVariable String cdsid, @PathVariable String year) {
+		try {
+
+			Map<String, Object> params = new TreeMap<String, Object>();
+			params.put("cdsId", cdsid);
+			params.put("anno", year);
+			return getCompleteCdsCalendar(params);
+		} catch (Exception e) {
+			e.printStackTrace();
+			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+		}
+		return null;
+	}		
+	
 	private List<CalendarCdsData> getCdsCalendar(Map<String, Object> params) throws Exception {
 		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetCalendarioCds", params);
 		List<ByteString> bsl = resp.getDataList();
@@ -198,6 +214,18 @@ public class Esse3Controller extends RestController {
 
 		return cc;
 	}		
+	
+	private List<CalendarCdsData> getCompleteCdsCalendar(Map<String, Object> params) throws Exception {
+		ActionInvokeParameters resp = (ActionInvokeParameters)client.invokeService("smartcampus.service.esse3", "GetCalendarioCompletoCds", params);
+		List<ByteString> bsl = resp.getDataList();
+		List<CalendarCdsData> cc = new ArrayList<CalendarCdsData>();
+		for (ByteString bs : bsl) {
+			CalendarCds or = CalendarCds.parseFrom(bs);
+			cc.add(new CalendarCdsData(or));
+		}
+
+		return cc;
+	}			
 
 
 }
