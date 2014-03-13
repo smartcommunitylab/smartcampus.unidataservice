@@ -35,7 +35,16 @@
 	<resourceMapping uri="smartcampus.unidataservice.courses"
 		pathPattern="/gettimetable/{cdscod}/{aaord}/{aaoff}/{pdsid}/{pdscod}/{adcod}/{domcod}/{fatcod}" method="GET"/>
 	<resourceMapping uri="smartcampus.unidataservice.courses"
-		pathPattern="/getcdscalendar/{cdsid}/{year}" method="GET"/>				
+		pathPattern="/getcdscalendar/{cdsid}/{year}" method="GET"/>
+	
+	<resourceMapping uri="smartcampus.unidataservice.courses"
+		pathPattern="/getfullcdscalendar/{cdsid}/{year}" method="GET"/>
+	<resourceMapping uri="smartcampus.unidataservice.courses"
+		pathPattern="/getfulladcalendar/{adid}" method="GET"/>
+	<resourceMapping uri="smartcampus.unidataservice.courses"
+		pathPattern="/getfullcdscalendar/{cdsid}/{year}/{from}/{to}" method="GET"/>
+	<resourceMapping uri="smartcampus.unidataservice.courses"
+		pathPattern="/getfulladcalendar/{adid}/{from}/{to}" method="GET"/>															
 
 	<resourceMapping uri="smartcampus.unidataservice.canteen"
 		pathPattern="/data/getmenu/{from}/{to}" method="GET"/>

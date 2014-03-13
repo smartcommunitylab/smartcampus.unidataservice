@@ -5391,7 +5391,6 @@ public final class Esse3 {
       private java.lang.Object cdsCod_ = "";
       public boolean hasCdsCod() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
-<<<<<<< HEAD
       }
       public String getCdsCod() {
         java.lang.Object ref = cdsCod_;
@@ -5506,20 +5505,11 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           durata_ = s;
-=======
-      }
-      public String getCdsCod() {
-        java.lang.Object ref = cdsCod_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          cdsCod_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           return s;
         } else {
           return (String) ref;
         }
       }
-<<<<<<< HEAD
       public Builder setDurata(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -5551,45 +5541,11 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           aaOrd_ = s;
-=======
-      public Builder setCdsCod(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        cdsCod_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearCdsCod() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        cdsCod_ = getDefaultInstance().getCdsCod();
-        onChanged();
-        return this;
-      }
-      void setCdsCod(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
-        cdsCod_ = value;
-        onChanged();
-      }
-      
-      // required string facId = 3;
-      private java.lang.Object facId_ = "";
-      public boolean hasFacId() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public String getFacId() {
-        java.lang.Object ref = facId_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          facId_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           return s;
         } else {
           return (String) ref;
         }
       }
-<<<<<<< HEAD
       public Builder setAaOrd(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -6067,126 +6023,19 @@ public final class Esse3 {
       // Construct using smartcampus.service.esse3.data.message.Esse3.Pds.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
-=======
-      public Builder setFacId(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        facId_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearFacId() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        facId_ = getDefaultInstance().getFacId();
-        onChanged();
-        return this;
-      }
-      void setFacId(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
-        facId_ = value;
-        onChanged();
       }
       
-      // required string description = 4;
-      private java.lang.Object description_ = "";
-      public boolean hasDescription() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
       }
-      public String getDescription() {
-        java.lang.Object ref = description_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          description_ = s;
-          return s;
-        } else {
-          return (String) ref;
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
         }
       }
-      public Builder setDescription(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        description_ = value;
-        onChanged();
-        return this;
+      private static Builder create() {
+        return new Builder();
       }
-      public Builder clearDescription() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        description_ = getDefaultInstance().getDescription();
-        onChanged();
-        return this;
-      }
-      void setDescription(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000008;
-        description_ = value;
-        onChanged();
-      }
-      
-      // required string durata = 5;
-      private java.lang.Object durata_ = "";
-      public boolean hasDurata() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      public String getDurata() {
-        java.lang.Object ref = durata_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          durata_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setDurata(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        durata_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearDurata() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        durata_ = getDefaultInstance().getDurata();
-        onChanged();
-        return this;
-      }
-      void setDurata(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000010;
-        durata_ = value;
-        onChanged();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-      }
-      
-      // required string aaOrd = 6;
-      private java.lang.Object aaOrd_ = "";
-      public boolean hasAaOrd() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      public String getAaOrd() {
-        java.lang.Object ref = aaOrd_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          aaOrd_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setAaOrd(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000020;
-        aaOrd_ = value;
-        onChanged();
-        return this;
-      }
-<<<<<<< HEAD
       
       public Builder clear() {
         super.clear();
@@ -6194,21 +6043,13 @@ public final class Esse3 {
         bitField0_ = (bitField0_ & ~0x00000001);
         pdsCod_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-=======
-      public Builder clearAaOrd() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        aaOrd_ = getDefaultInstance().getAaOrd();
-        onChanged();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return this;
       }
-      void setAaOrd(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000020;
-        aaOrd_ = value;
-        onChanged();
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
       }
       
-<<<<<<< HEAD
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
         return smartcampus.service.esse3.data.message.Esse3.Pds.getDescriptor();
@@ -6222,29 +6063,9 @@ public final class Esse3 {
         smartcampus.service.esse3.data.message.Esse3.Pds result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
-=======
-      // repeated .smartcampus.service.esse3.data.message.Pds pds = 7;
-      private java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds> pds_ =
-        java.util.Collections.emptyList();
-      private void ensurePdsIsMutable() {
-        if (!((bitField0_ & 0x00000040) == 0x00000040)) {
-          pds_ = new java.util.ArrayList<smartcampus.service.esse3.data.message.Esse3.Pds>(pds_);
-          bitField0_ |= 0x00000040;
-         }
-      }
-      
-      private com.google.protobuf.RepeatedFieldBuilder<
-          smartcampus.service.esse3.data.message.Esse3.Pds, smartcampus.service.esse3.data.message.Esse3.Pds.Builder, smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder> pdsBuilder_;
-      
-      public java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds> getPdsList() {
-        if (pdsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(pds_);
-        } else {
-          return pdsBuilder_.getMessageList();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
+        return result;
       }
-<<<<<<< HEAD
       
       private smartcampus.service.esse3.data.message.Esse3.Pds buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -6252,16 +6073,9 @@ public final class Esse3 {
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
-=======
-      public int getPdsCount() {
-        if (pdsBuilder_ == null) {
-          return pds_.size();
-        } else {
-          return pdsBuilder_.getCount();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
+        return result;
       }
-<<<<<<< HEAD
       
       public smartcampus.service.esse3.data.message.Esse3.Pds buildPartial() {
         smartcampus.service.esse3.data.message.Esse3.Pds result = new smartcampus.service.esse3.data.message.Esse3.Pds(this);
@@ -6283,30 +6097,11 @@ public final class Esse3 {
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof smartcampus.service.esse3.data.message.Esse3.Pds) {
           return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Pds)other);
-=======
-      public smartcampus.service.esse3.data.message.Esse3.Pds getPds(int index) {
-        if (pdsBuilder_ == null) {
-          return pds_.get(index);
         } else {
-          return pdsBuilder_.getMessage(index);
+          super.mergeFrom(other);
+          return this;
         }
       }
-      public Builder setPds(
-          int index, smartcampus.service.esse3.data.message.Esse3.Pds value) {
-        if (pdsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePdsIsMutable();
-          pds_.set(index, value);
-          onChanged();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-        } else {
-          pdsBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-<<<<<<< HEAD
       
       public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Pds other) {
         if (other == smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance()) return this;
@@ -6315,20 +6110,10 @@ public final class Esse3 {
         }
         if (other.hasPdsCod()) {
           setPdsCod(other.getPdsCod());
-=======
-      public Builder setPds(
-          int index, smartcampus.service.esse3.data.message.Esse3.Pds.Builder builderForValue) {
-        if (pdsBuilder_ == null) {
-          ensurePdsIsMutable();
-          pds_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          pdsBuilder_.setMessage(index, builderForValue.build());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
+        this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-<<<<<<< HEAD
       
       public final boolean isInitialized() {
         if (!hasPdsId()) {
@@ -6338,22 +6123,9 @@ public final class Esse3 {
         if (!hasPdsCod()) {
           
           return false;
-=======
-      public Builder addPds(smartcampus.service.esse3.data.message.Esse3.Pds value) {
-        if (pdsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePdsIsMutable();
-          pds_.add(value);
-          onChanged();
-        } else {
-          pdsBuilder_.addMessage(value);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
-        return this;
+        return true;
       }
-<<<<<<< HEAD
       
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
@@ -6388,23 +6160,9 @@ public final class Esse3 {
               pdsCod_ = input.readBytes();
               break;
             }
-=======
-      public Builder addPds(
-          int index, smartcampus.service.esse3.data.message.Esse3.Pds value) {
-        if (pdsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           }
-          ensurePdsIsMutable();
-          pds_.add(index, value);
-          onChanged();
-        } else {
-          pdsBuilder_.addMessage(index, value);
         }
-        return this;
       }
-<<<<<<< HEAD
       
       private int bitField0_;
       
@@ -6419,42 +6177,10 @@ public final class Esse3 {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           pdsId_ = s;
           return s;
-=======
-      public Builder addPds(
-          smartcampus.service.esse3.data.message.Esse3.Pds.Builder builderForValue) {
-        if (pdsBuilder_ == null) {
-          ensurePdsIsMutable();
-          pds_.add(builderForValue.build());
-          onChanged();
         } else {
-          pdsBuilder_.addMessage(builderForValue.build());
+          return (String) ref;
         }
-        return this;
       }
-      public Builder addPds(
-          int index, smartcampus.service.esse3.data.message.Esse3.Pds.Builder builderForValue) {
-        if (pdsBuilder_ == null) {
-          ensurePdsIsMutable();
-          pds_.add(index, builderForValue.build());
-          onChanged();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-        } else {
-          pdsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addAllPds(
-          java.lang.Iterable<? extends smartcampus.service.esse3.data.message.Esse3.Pds> values) {
-        if (pdsBuilder_ == null) {
-          ensurePdsIsMutable();
-          super.addAll(values, pds_);
-          onChanged();
-        } else {
-          pdsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-<<<<<<< HEAD
       public Builder setPdsId(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -6487,48 +6213,10 @@ public final class Esse3 {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           pdsCod_ = s;
           return s;
-=======
-      public Builder clearPds() {
-        if (pdsBuilder_ == null) {
-          pds_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
-          onChanged();
         } else {
-          pdsBuilder_.clear();
-        }
-        return this;
-      }
-      public Builder removePds(int index) {
-        if (pdsBuilder_ == null) {
-          ensurePdsIsMutable();
-          pds_.remove(index);
-          onChanged();
-        } else {
-          pdsBuilder_.remove(index);
-        }
-        return this;
-      }
-      public smartcampus.service.esse3.data.message.Esse3.Pds.Builder getPdsBuilder(
-          int index) {
-        return getPdsFieldBuilder().getBuilder(index);
-      }
-      public smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder getPdsOrBuilder(
-          int index) {
-        if (pdsBuilder_ == null) {
-          return pds_.get(index);  } else {
-          return pdsBuilder_.getMessageOrBuilder(index);
+          return (String) ref;
         }
       }
-      public java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder> 
-           getPdsOrBuilderList() {
-        if (pdsBuilder_ != null) {
-          return pdsBuilder_.getMessageOrBuilderList();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-        } else {
-          return java.util.Collections.unmodifiableList(pds_);
-        }
-      }
-<<<<<<< HEAD
       public Builder setPdsCod(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -6601,88 +6289,16 @@ public final class Esse3 {
     }
     
     public Ad getDefaultInstanceForType() {
-=======
-      public smartcampus.service.esse3.data.message.Esse3.Pds.Builder addPdsBuilder() {
-        return getPdsFieldBuilder().addBuilder(
-            smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance());
-      }
-      public smartcampus.service.esse3.data.message.Esse3.Pds.Builder addPdsBuilder(
-          int index) {
-        return getPdsFieldBuilder().addBuilder(
-            index, smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance());
-      }
-      public java.util.List<smartcampus.service.esse3.data.message.Esse3.Pds.Builder> 
-           getPdsBuilderList() {
-        return getPdsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          smartcampus.service.esse3.data.message.Esse3.Pds, smartcampus.service.esse3.data.message.Esse3.Pds.Builder, smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder> 
-          getPdsFieldBuilder() {
-        if (pdsBuilder_ == null) {
-          pdsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              smartcampus.service.esse3.data.message.Esse3.Pds, smartcampus.service.esse3.data.message.Esse3.Pds.Builder, smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder>(
-                  pds_,
-                  ((bitField0_ & 0x00000040) == 0x00000040),
-                  getParentForChildren(),
-                  isClean());
-          pds_ = null;
-        }
-        return pdsBuilder_;
-      }
-      
-      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Cds)
-    }
-    
-    static {
-      defaultInstance = new Cds(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Cds)
-  }
-  
-  public interface PdsOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-    
-    // required string pdsId = 1;
-    boolean hasPdsId();
-    String getPdsId();
-    
-    // required string pdsCod = 2;
-    boolean hasPdsCod();
-    String getPdsCod();
-  }
-  public static final class Pds extends
-      com.google.protobuf.GeneratedMessage
-      implements PdsOrBuilder {
-    // Use Pds.newBuilder() to construct.
-    private Pds(Builder builder) {
-      super(builder);
-    }
-    private Pds(boolean noInit) {}
-    
-    private static final Pds defaultInstance;
-    public static Pds getDefaultInstance() {
-      return defaultInstance;
-    }
-    
-    public Pds getDefaultInstanceForType() {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-<<<<<<< HEAD
       return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_descriptor;
-=======
-      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Pds_descriptor;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-<<<<<<< HEAD
       return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_fieldAccessorTable;
     }
     
@@ -6727,20 +6343,6 @@ public final class Esse3 {
     }
     public String getAdcod() {
       java.lang.Object ref = adcod_;
-=======
-      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Pds_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // required string pdsId = 1;
-    public static final int PDSID_FIELD_NUMBER = 1;
-    private java.lang.Object pdsId_;
-    public boolean hasPdsId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public String getPdsId() {
-      java.lang.Object ref = pdsId_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -6748,37 +6350,23 @@ public final class Esse3 {
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-<<<<<<< HEAD
           adcod_ = s;
-=======
-          pdsId_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         return s;
       }
     }
-<<<<<<< HEAD
     private com.google.protobuf.ByteString getAdcodBytes() {
       java.lang.Object ref = adcod_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
         adcod_ = b;
-=======
-    private com.google.protobuf.ByteString getPdsIdBytes() {
-      java.lang.Object ref = pdsId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        pdsId_ = b;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     
-<<<<<<< HEAD
     // required string description = 3;
     public static final int DESCRIPTION_FIELD_NUMBER = 3;
     private java.lang.Object description_;
@@ -6787,16 +6375,6 @@ public final class Esse3 {
     }
     public String getDescription() {
       java.lang.Object ref = description_;
-=======
-    // required string pdsCod = 2;
-    public static final int PDSCOD_FIELD_NUMBER = 2;
-    private java.lang.Object pdsCod_;
-    public boolean hasPdsCod() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public String getPdsCod() {
-      java.lang.Object ref = pdsCod_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -6804,37 +6382,23 @@ public final class Esse3 {
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-<<<<<<< HEAD
           description_ = s;
-=======
-          pdsCod_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         return s;
       }
     }
-<<<<<<< HEAD
     private com.google.protobuf.ByteString getDescriptionBytes() {
       java.lang.Object ref = description_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
         description_ = b;
-=======
-    private com.google.protobuf.ByteString getPdsCodBytes() {
-      java.lang.Object ref = pdsCod_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        pdsCod_ = b;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     
-<<<<<<< HEAD
     // repeated string fatPart = 4;
     public static final int FATPART_FIELD_NUMBER = 4;
     private com.google.protobuf.LazyStringList fatPart_;
@@ -6869,18 +6433,12 @@ public final class Esse3 {
       description_ = "";
       fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-=======
-    private void initFields() {
-      pdsId_ = "";
-      pdsCod_ = "";
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-<<<<<<< HEAD
       if (!hasAdId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -6890,13 +6448,6 @@ public final class Esse3 {
         return false;
       }
       if (!hasDescription()) {
-=======
-      if (!hasPdsId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasPdsCod()) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         memoizedIsInitialized = 0;
         return false;
       }
@@ -6908,7 +6459,6 @@ public final class Esse3 {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-<<<<<<< HEAD
         output.writeBytes(1, getAdIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -6922,12 +6472,6 @@ public final class Esse3 {
       }
       for (int i = 0; i < domPart_.size(); i++) {
         output.writeBytes(5, domPart_.getByteString(i));
-=======
-        output.writeBytes(1, getPdsIdBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getPdsCodBytes());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       getUnknownFields().writeTo(output);
     }
@@ -6940,7 +6484,6 @@ public final class Esse3 {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-<<<<<<< HEAD
           .computeBytesSize(1, getAdIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -6968,13 +6511,6 @@ public final class Esse3 {
         }
         size += dataSize;
         size += 1 * getDomPartList().size();
-=======
-          .computeBytesSize(1, getPdsIdBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getPdsCodBytes());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -6988,69 +6524,41 @@ public final class Esse3 {
       return super.writeReplace();
     }
     
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseDelimitedFrom(java.io.InputStream input)
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseDelimitedFrom(java.io.InputStream input)
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -7059,11 +6567,7 @@ public final class Esse3 {
         return null;
       }
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseDelimitedFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseDelimitedFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7074,20 +6578,12 @@ public final class Esse3 {
         return null;
       }
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Pds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7097,11 +6593,7 @@ public final class Esse3 {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-<<<<<<< HEAD
     public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Ad prototype) {
-=======
-    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Pds prototype) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -7114,32 +6606,18 @@ public final class Esse3 {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-<<<<<<< HEAD
        implements smartcampus.service.esse3.data.message.Esse3.AdOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_descriptor;
-=======
-       implements smartcampus.service.esse3.data.message.Esse3.PdsOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Pds_descriptor;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-<<<<<<< HEAD
         return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_fieldAccessorTable;
       }
       
       // Construct using smartcampus.service.esse3.data.message.Esse3.Ad.newBuilder()
-=======
-        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Pds_fieldAccessorTable;
-      }
-      
-      // Construct using smartcampus.service.esse3.data.message.Esse3.Pds.newBuilder()
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -7158,7 +6636,6 @@ public final class Esse3 {
       
       public Builder clear() {
         super.clear();
-<<<<<<< HEAD
         adId_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         adcod_ = "";
@@ -7169,12 +6646,6 @@ public final class Esse3 {
         bitField0_ = (bitField0_ & ~0x00000008);
         domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000010);
-=======
-        pdsId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        pdsCod_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return this;
       }
       
@@ -7184,7 +6655,6 @@ public final class Esse3 {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-<<<<<<< HEAD
         return smartcampus.service.esse3.data.message.Esse3.Ad.getDescriptor();
       }
       
@@ -7194,32 +6664,15 @@ public final class Esse3 {
       
       public smartcampus.service.esse3.data.message.Esse3.Ad build() {
         smartcampus.service.esse3.data.message.Esse3.Ad result = buildPartial();
-=======
-        return smartcampus.service.esse3.data.message.Esse3.Pds.getDescriptor();
-      }
-      
-      public smartcampus.service.esse3.data.message.Esse3.Pds getDefaultInstanceForType() {
-        return smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance();
-      }
-      
-      public smartcampus.service.esse3.data.message.Esse3.Pds build() {
-        smartcampus.service.esse3.data.message.Esse3.Pds result = buildPartial();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-<<<<<<< HEAD
       private smartcampus.service.esse3.data.message.Esse3.Ad buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
         smartcampus.service.esse3.data.message.Esse3.Ad result = buildPartial();
-=======
-      private smartcampus.service.esse3.data.message.Esse3.Pds buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        smartcampus.service.esse3.data.message.Esse3.Pds result = buildPartial();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -7227,19 +6680,13 @@ public final class Esse3 {
         return result;
       }
       
-<<<<<<< HEAD
       public smartcampus.service.esse3.data.message.Esse3.Ad buildPartial() {
         smartcampus.service.esse3.data.message.Esse3.Ad result = new smartcampus.service.esse3.data.message.Esse3.Ad(this);
-=======
-      public smartcampus.service.esse3.data.message.Esse3.Pds buildPartial() {
-        smartcampus.service.esse3.data.message.Esse3.Pds result = new smartcampus.service.esse3.data.message.Esse3.Pds(this);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-<<<<<<< HEAD
         result.adId_ = adId_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
@@ -7261,33 +6708,20 @@ public final class Esse3 {
           bitField0_ = (bitField0_ & ~0x00000010);
         }
         result.domPart_ = domPart_;
-=======
-        result.pdsId_ = pdsId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.pdsCod_ = pdsCod_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-<<<<<<< HEAD
         if (other instanceof smartcampus.service.esse3.data.message.Esse3.Ad) {
           return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Ad)other);
-=======
-        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Pds) {
-          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Pds)other);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-<<<<<<< HEAD
       public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Ad other) {
         if (other == smartcampus.service.esse3.data.message.Esse3.Ad.getDefaultInstance()) return this;
         if (other.hasAdId()) {
@@ -7318,22 +6752,12 @@ public final class Esse3 {
             domPart_.addAll(other.domPart_);
           }
           onChanged();
-=======
-      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Pds other) {
-        if (other == smartcampus.service.esse3.data.message.Esse3.Pds.getDefaultInstance()) return this;
-        if (other.hasPdsId()) {
-          setPdsId(other.getPdsId());
-        }
-        if (other.hasPdsCod()) {
-          setPdsCod(other.getPdsCod());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
       
       public final boolean isInitialized() {
-<<<<<<< HEAD
         if (!hasAdId()) {
           
           return false;
@@ -7343,13 +6767,6 @@ public final class Esse3 {
           return false;
         }
         if (!hasDescription()) {
-=======
-        if (!hasPdsId()) {
-          
-          return false;
-        }
-        if (!hasPdsCod()) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           
           return false;
         }
@@ -7381,16 +6798,11 @@ public final class Esse3 {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-<<<<<<< HEAD
               adId_ = input.readBytes();
-=======
-              pdsId_ = input.readBytes();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
               break;
             }
             case 18: {
               bitField0_ |= 0x00000002;
-<<<<<<< HEAD
               adcod_ = input.readBytes();
               break;
             }
@@ -7407,9 +6819,6 @@ public final class Esse3 {
             case 42: {
               ensureDomPartIsMutable();
               domPart_.add(input.readBytes());
-=======
-              pdsCod_ = input.readBytes();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
               break;
             }
           }
@@ -7418,7 +6827,6 @@ public final class Esse3 {
       
       private int bitField0_;
       
-<<<<<<< HEAD
       // required string adId = 1;
       private java.lang.Object adId_ = "";
       public boolean hasAdId() {
@@ -7465,24 +6873,11 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           adcod_ = s;
-=======
-      // required string pdsId = 1;
-      private java.lang.Object pdsId_ = "";
-      public boolean hasPdsId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public String getPdsId() {
-        java.lang.Object ref = pdsId_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          pdsId_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           return s;
         } else {
           return (String) ref;
         }
       }
-<<<<<<< HEAD
       public Builder setAdcod(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -7514,45 +6909,11 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           description_ = s;
-=======
-      public Builder setPdsId(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        pdsId_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearPdsId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        pdsId_ = getDefaultInstance().getPdsId();
-        onChanged();
-        return this;
-      }
-      void setPdsId(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
-        pdsId_ = value;
-        onChanged();
-      }
-      
-      // required string pdsCod = 2;
-      private java.lang.Object pdsCod_ = "";
-      public boolean hasPdsCod() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public String getPdsCod() {
-        java.lang.Object ref = pdsCod_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          pdsCod_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           return s;
         } else {
           return (String) ref;
         }
       }
-<<<<<<< HEAD
       public Builder setDescription(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -7739,95 +7100,16 @@ public final class Esse3 {
     }
     
     public Orari getDefaultInstanceForType() {
-=======
-      public Builder setPdsCod(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        pdsCod_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearPdsCod() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        pdsCod_ = getDefaultInstance().getPdsCod();
-        onChanged();
-        return this;
-      }
-      void setPdsCod(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
-        pdsCod_ = value;
-        onChanged();
-      }
-      
-      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Pds)
-    }
-    
-    static {
-      defaultInstance = new Pds(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Pds)
-  }
-  
-  public interface AdOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-    
-    // required string adId = 1;
-    boolean hasAdId();
-    String getAdId();
-    
-    // required string adcod = 2;
-    boolean hasAdcod();
-    String getAdcod();
-    
-    // required string description = 3;
-    boolean hasDescription();
-    String getDescription();
-    
-    // repeated string fatPart = 4;
-    java.util.List<String> getFatPartList();
-    int getFatPartCount();
-    String getFatPart(int index);
-    
-    // repeated string domPart = 5;
-    java.util.List<String> getDomPartList();
-    int getDomPartCount();
-    String getDomPart(int index);
-  }
-  public static final class Ad extends
-      com.google.protobuf.GeneratedMessage
-      implements AdOrBuilder {
-    // Use Ad.newBuilder() to construct.
-    private Ad(Builder builder) {
-      super(builder);
-    }
-    private Ad(boolean noInit) {}
-    
-    private static final Ad defaultInstance;
-    public static Ad getDefaultInstance() {
-      return defaultInstance;
-    }
-    
-    public Ad getDefaultInstanceForType() {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-<<<<<<< HEAD
       return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_descriptor;
-=======
-      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_descriptor;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-<<<<<<< HEAD
       return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_fieldAccessorTable;
     }
     
@@ -7968,20 +7250,6 @@ public final class Esse3 {
     }
     public String getRoom() {
       java.lang.Object ref = room_;
-=======
-      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // required string adId = 1;
-    public static final int ADID_FIELD_NUMBER = 1;
-    private java.lang.Object adId_;
-    public boolean hasAdId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public String getAdId() {
-      java.lang.Object ref = adId_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -7989,37 +7257,23 @@ public final class Esse3 {
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-<<<<<<< HEAD
           room_ = s;
-=======
-          adId_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         return s;
       }
     }
-<<<<<<< HEAD
     private com.google.protobuf.ByteString getRoomBytes() {
       java.lang.Object ref = room_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
         room_ = b;
-=======
-    private com.google.protobuf.ByteString getAdIdBytes() {
-      java.lang.Object ref = adId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        adId_ = b;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     
-<<<<<<< HEAD
     // required string teacher = 6;
     public static final int TEACHER_FIELD_NUMBER = 6;
     private java.lang.Object teacher_;
@@ -8028,16 +7282,6 @@ public final class Esse3 {
     }
     public String getTeacher() {
       java.lang.Object ref = teacher_;
-=======
-    // required string adcod = 2;
-    public static final int ADCOD_FIELD_NUMBER = 2;
-    private java.lang.Object adcod_;
-    public boolean hasAdcod() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public String getAdcod() {
-      java.lang.Object ref = adcod_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -8045,118 +7289,36 @@ public final class Esse3 {
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-<<<<<<< HEAD
           teacher_ = s;
-=======
-          adcod_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         return s;
       }
     }
-<<<<<<< HEAD
     private com.google.protobuf.ByteString getTeacherBytes() {
       java.lang.Object ref = teacher_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
         teacher_ = b;
-=======
-    private com.google.protobuf.ByteString getAdcodBytes() {
-      java.lang.Object ref = adcod_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        adcod_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
-    }
-    
-    // required string description = 3;
-    public static final int DESCRIPTION_FIELD_NUMBER = 3;
-    private java.lang.Object description_;
-    public boolean hasDescription() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public String getDescription() {
-      java.lang.Object ref = description_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          description_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getDescriptionBytes() {
-      java.lang.Object ref = description_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        description_ = b;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // repeated string fatPart = 4;
-    public static final int FATPART_FIELD_NUMBER = 4;
-    private com.google.protobuf.LazyStringList fatPart_;
-    public java.util.List<String>
-        getFatPartList() {
-      return fatPart_;
-    }
-    public int getFatPartCount() {
-      return fatPart_.size();
-    }
-    public String getFatPart(int index) {
-      return fatPart_.get(index);
-    }
-    
-    // repeated string domPart = 5;
-    public static final int DOMPART_FIELD_NUMBER = 5;
-    private com.google.protobuf.LazyStringList domPart_;
-    public java.util.List<String>
-        getDomPartList() {
-      return domPart_;
-    }
-    public int getDomPartCount() {
-      return domPart_.size();
-    }
-    public String getDomPart(int index) {
-      return domPart_.get(index);
     }
     
     private void initFields() {
-<<<<<<< HEAD
       type_ = "";
       date_ = "";
       from_ = "";
       to_ = "";
       room_ = "";
       teacher_ = "";
-=======
-      adId_ = "";
-      adcod_ = "";
-      description_ = "";
-      fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-<<<<<<< HEAD
       if (!hasType()) {
         memoizedIsInitialized = 0;
         return false;
@@ -8178,17 +7340,6 @@ public final class Esse3 {
         return false;
       }
       if (!hasTeacher()) {
-=======
-      if (!hasAdId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasAdcod()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasDescription()) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         memoizedIsInitialized = 0;
         return false;
       }
@@ -8200,7 +7351,6 @@ public final class Esse3 {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-<<<<<<< HEAD
         output.writeBytes(1, getTypeBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -8217,21 +7367,6 @@ public final class Esse3 {
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         output.writeBytes(6, getTeacherBytes());
-=======
-        output.writeBytes(1, getAdIdBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getAdcodBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getDescriptionBytes());
-      }
-      for (int i = 0; i < fatPart_.size(); i++) {
-        output.writeBytes(4, fatPart_.getByteString(i));
-      }
-      for (int i = 0; i < domPart_.size(); i++) {
-        output.writeBytes(5, domPart_.getByteString(i));
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       getUnknownFields().writeTo(output);
     }
@@ -8244,7 +7379,6 @@ public final class Esse3 {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-<<<<<<< HEAD
           .computeBytesSize(1, getTypeBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -8266,35 +7400,6 @@ public final class Esse3 {
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(6, getTeacherBytes());
-=======
-          .computeBytesSize(1, getAdIdBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getAdcodBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getDescriptionBytes());
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < fatPart_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeBytesSizeNoTag(fatPart_.getByteString(i));
-        }
-        size += dataSize;
-        size += 1 * getFatPartList().size();
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < domPart_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeBytesSizeNoTag(domPart_.getByteString(i));
-        }
-        size += dataSize;
-        size += 1 * getDomPartList().size();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -8308,69 +7413,41 @@ public final class Esse3 {
       return super.writeReplace();
     }
     
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseDelimitedFrom(java.io.InputStream input)
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseDelimitedFrom(java.io.InputStream input)
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -8379,11 +7456,7 @@ public final class Esse3 {
         return null;
       }
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseDelimitedFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseDelimitedFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8394,20 +7467,12 @@ public final class Esse3 {
         return null;
       }
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Ad parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8417,11 +7482,7 @@ public final class Esse3 {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-<<<<<<< HEAD
     public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Orari prototype) {
-=======
-    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Ad prototype) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -8434,7 +7495,6 @@ public final class Esse3 {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-<<<<<<< HEAD
        implements smartcampus.service.esse3.data.message.Esse3.OrariOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -8660,22 +7720,6 @@ public final class Esse3 {
             }
           }
         }
-=======
-       implements smartcampus.service.esse3.data.message.Esse3.AdOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Ad_fieldAccessorTable;
-      }
-      
-      // Construct using smartcampus.service.esse3.data.message.Esse3.Ad.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       
       private int bitField0_;
@@ -8704,7 +7748,6 @@ public final class Esse3 {
         onChanged();
         return this;
       }
-<<<<<<< HEAD
       public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000001);
         type_ = getDefaultInstance().getType();
@@ -8730,41 +7773,6 @@ public final class Esse3 {
           return s;
         } else {
           return (String) ref;
-=======
-      
-      public Builder clear() {
-        super.clear();
-        adId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        adcod_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        description_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return smartcampus.service.esse3.data.message.Esse3.Ad.getDescriptor();
-      }
-      
-      public smartcampus.service.esse3.data.message.Esse3.Ad getDefaultInstanceForType() {
-        return smartcampus.service.esse3.data.message.Esse3.Ad.getDefaultInstance();
-      }
-      
-      public smartcampus.service.esse3.data.message.Esse3.Ad build() {
-        smartcampus.service.esse3.data.message.Esse3.Ad result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
       }
       public Builder setDate(String value) {
@@ -8788,7 +7796,6 @@ public final class Esse3 {
         onChanged();
       }
       
-<<<<<<< HEAD
       // required string from = 3;
       private java.lang.Object from_ = "";
       public boolean hasFrom() {
@@ -8802,14 +7809,6 @@ public final class Esse3 {
           return s;
         } else {
           return (String) ref;
-=======
-      private smartcampus.service.esse3.data.message.Esse3.Ad buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        smartcampus.service.esse3.data.message.Esse3.Ad result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
       }
       public Builder setFrom(String value) {
@@ -8833,7 +7832,6 @@ public final class Esse3 {
         onChanged();
       }
       
-<<<<<<< HEAD
       // required string to = 4;
       private java.lang.Object to_ = "";
       public boolean hasTo() {
@@ -8845,49 +7843,10 @@ public final class Esse3 {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           to_ = s;
           return s;
-=======
-      public smartcampus.service.esse3.data.message.Esse3.Ad buildPartial() {
-        smartcampus.service.esse3.data.message.Esse3.Ad result = new smartcampus.service.esse3.data.message.Esse3.Ad(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.adId_ = adId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.adcod_ = adcod_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.description_ = description_;
-        if (((bitField0_ & 0x00000008) == 0x00000008)) {
-          fatPart_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              fatPart_);
-          bitField0_ = (bitField0_ & ~0x00000008);
-        }
-        result.fatPart_ = fatPart_;
-        if (((bitField0_ & 0x00000010) == 0x00000010)) {
-          domPart_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              domPart_);
-          bitField0_ = (bitField0_ & ~0x00000010);
-        }
-        result.domPart_ = domPart_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Ad) {
-          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Ad)other);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         } else {
           return (String) ref;
         }
       }
-<<<<<<< HEAD
       public Builder setTo(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -8919,202 +7878,11 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           room_ = s;
-=======
-      
-      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Ad other) {
-        if (other == smartcampus.service.esse3.data.message.Esse3.Ad.getDefaultInstance()) return this;
-        if (other.hasAdId()) {
-          setAdId(other.getAdId());
-        }
-        if (other.hasAdcod()) {
-          setAdcod(other.getAdcod());
-        }
-        if (other.hasDescription()) {
-          setDescription(other.getDescription());
-        }
-        if (!other.fatPart_.isEmpty()) {
-          if (fatPart_.isEmpty()) {
-            fatPart_ = other.fatPart_;
-            bitField0_ = (bitField0_ & ~0x00000008);
-          } else {
-            ensureFatPartIsMutable();
-            fatPart_.addAll(other.fatPart_);
-          }
-          onChanged();
-        }
-        if (!other.domPart_.isEmpty()) {
-          if (domPart_.isEmpty()) {
-            domPart_ = other.domPart_;
-            bitField0_ = (bitField0_ & ~0x00000010);
-          } else {
-            ensureDomPartIsMutable();
-            domPart_.addAll(other.domPart_);
-          }
-          onChanged();
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        if (!hasAdId()) {
-          
-          return false;
-        }
-        if (!hasAdcod()) {
-          
-          return false;
-        }
-        if (!hasDescription()) {
-          
-          return false;
-        }
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              bitField0_ |= 0x00000001;
-              adId_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              adcod_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              description_ = input.readBytes();
-              break;
-            }
-            case 34: {
-              ensureFatPartIsMutable();
-              fatPart_.add(input.readBytes());
-              break;
-            }
-            case 42: {
-              ensureDomPartIsMutable();
-              domPart_.add(input.readBytes());
-              break;
-            }
-          }
-        }
-      }
-      
-      private int bitField0_;
-      
-      // required string adId = 1;
-      private java.lang.Object adId_ = "";
-      public boolean hasAdId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public String getAdId() {
-        java.lang.Object ref = adId_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          adId_ = s;
           return s;
         } else {
           return (String) ref;
         }
       }
-      public Builder setAdId(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        adId_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearAdId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        adId_ = getDefaultInstance().getAdId();
-        onChanged();
-        return this;
-      }
-      void setAdId(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
-        adId_ = value;
-        onChanged();
-      }
-      
-      // required string adcod = 2;
-      private java.lang.Object adcod_ = "";
-      public boolean hasAdcod() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public String getAdcod() {
-        java.lang.Object ref = adcod_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          adcod_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setAdcod(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        adcod_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearAdcod() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        adcod_ = getDefaultInstance().getAdcod();
-        onChanged();
-        return this;
-      }
-      void setAdcod(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
-        adcod_ = value;
-        onChanged();
-      }
-      
-      // required string description = 3;
-      private java.lang.Object description_ = "";
-      public boolean hasDescription() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public String getDescription() {
-        java.lang.Object ref = description_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          description_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-<<<<<<< HEAD
       public Builder setRoom(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -9229,209 +7997,16 @@ public final class Esse3 {
     }
     
     public CalendarCds getDefaultInstanceForType() {
-=======
-      public Builder setDescription(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        description_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearDescription() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        description_ = getDefaultInstance().getDescription();
-        onChanged();
-        return this;
-      }
-      void setDescription(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
-        description_ = value;
-        onChanged();
-      }
-      
-      // repeated string fatPart = 4;
-      private com.google.protobuf.LazyStringList fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      private void ensureFatPartIsMutable() {
-        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
-          fatPart_ = new com.google.protobuf.LazyStringArrayList(fatPart_);
-          bitField0_ |= 0x00000008;
-         }
-      }
-      public java.util.List<String>
-          getFatPartList() {
-        return java.util.Collections.unmodifiableList(fatPart_);
-      }
-      public int getFatPartCount() {
-        return fatPart_.size();
-      }
-      public String getFatPart(int index) {
-        return fatPart_.get(index);
-      }
-      public Builder setFatPart(
-          int index, String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureFatPartIsMutable();
-        fatPart_.set(index, value);
-        onChanged();
-        return this;
-      }
-      public Builder addFatPart(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureFatPartIsMutable();
-        fatPart_.add(value);
-        onChanged();
-        return this;
-      }
-      public Builder addAllFatPart(
-          java.lang.Iterable<String> values) {
-        ensureFatPartIsMutable();
-        super.addAll(values, fatPart_);
-        onChanged();
-        return this;
-      }
-      public Builder clearFatPart() {
-        fatPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
-        return this;
-      }
-      void addFatPart(com.google.protobuf.ByteString value) {
-        ensureFatPartIsMutable();
-        fatPart_.add(value);
-        onChanged();
-      }
-      
-      // repeated string domPart = 5;
-      private com.google.protobuf.LazyStringList domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      private void ensureDomPartIsMutable() {
-        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
-          domPart_ = new com.google.protobuf.LazyStringArrayList(domPart_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-      public java.util.List<String>
-          getDomPartList() {
-        return java.util.Collections.unmodifiableList(domPart_);
-      }
-      public int getDomPartCount() {
-        return domPart_.size();
-      }
-      public String getDomPart(int index) {
-        return domPart_.get(index);
-      }
-      public Builder setDomPart(
-          int index, String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureDomPartIsMutable();
-        domPart_.set(index, value);
-        onChanged();
-        return this;
-      }
-      public Builder addDomPart(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureDomPartIsMutable();
-        domPart_.add(value);
-        onChanged();
-        return this;
-      }
-      public Builder addAllDomPart(
-          java.lang.Iterable<String> values) {
-        ensureDomPartIsMutable();
-        super.addAll(values, domPart_);
-        onChanged();
-        return this;
-      }
-      public Builder clearDomPart() {
-        domPart_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        onChanged();
-        return this;
-      }
-      void addDomPart(com.google.protobuf.ByteString value) {
-        ensureDomPartIsMutable();
-        domPart_.add(value);
-        onChanged();
-      }
-      
-      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Ad)
-    }
-    
-    static {
-      defaultInstance = new Ad(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Ad)
-  }
-  
-  public interface OrariOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-    
-    // required string type = 1;
-    boolean hasType();
-    String getType();
-    
-    // required string date = 2;
-    boolean hasDate();
-    String getDate();
-    
-    // required string from = 3;
-    boolean hasFrom();
-    String getFrom();
-    
-    // required string to = 4;
-    boolean hasTo();
-    String getTo();
-    
-    // required string room = 5;
-    boolean hasRoom();
-    String getRoom();
-    
-    // required string teacher = 6;
-    boolean hasTeacher();
-    String getTeacher();
-  }
-  public static final class Orari extends
-      com.google.protobuf.GeneratedMessage
-      implements OrariOrBuilder {
-    // Use Orari.newBuilder() to construct.
-    private Orari(Builder builder) {
-      super(builder);
-    }
-    private Orari(boolean noInit) {}
-    
-    private static final Orari defaultInstance;
-    public static Orari getDefaultInstance() {
-      return defaultInstance;
-    }
-    
-    public Orari getDefaultInstanceForType() {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-<<<<<<< HEAD
       return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_CalendarCds_descriptor;
-=======
-      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_descriptor;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-<<<<<<< HEAD
       return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_CalendarCds_fieldAccessorTable;
     }
     
@@ -9508,20 +8083,6 @@ public final class Esse3 {
     }
     public String getTeacher() {
       java.lang.Object ref = teacher_;
-=======
-      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // required string type = 1;
-    public static final int TYPE_FIELD_NUMBER = 1;
-    private java.lang.Object type_;
-    public boolean hasType() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public String getType() {
-      java.lang.Object ref = type_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -9529,147 +8090,29 @@ public final class Esse3 {
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-<<<<<<< HEAD
           teacher_ = s;
-=======
-          type_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         return s;
       }
     }
-<<<<<<< HEAD
     private com.google.protobuf.ByteString getTeacherBytes() {
       java.lang.Object ref = teacher_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
         teacher_ = b;
-=======
-    private com.google.protobuf.ByteString getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        type_ = b;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     
-<<<<<<< HEAD
     // required string room = 4;
     public static final int ROOM_FIELD_NUMBER = 4;
     private java.lang.Object room_;
     public boolean hasRoom() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
-=======
-    // required string date = 2;
-    public static final int DATE_FIELD_NUMBER = 2;
-    private java.lang.Object date_;
-    public boolean hasDate() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public String getDate() {
-      java.lang.Object ref = date_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          date_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getDateBytes() {
-      java.lang.Object ref = date_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        date_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // required string from = 3;
-    public static final int FROM_FIELD_NUMBER = 3;
-    private java.lang.Object from_;
-    public boolean hasFrom() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public String getFrom() {
-      java.lang.Object ref = from_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          from_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getFromBytes() {
-      java.lang.Object ref = from_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        from_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // required string to = 4;
-    public static final int TO_FIELD_NUMBER = 4;
-    private java.lang.Object to_;
-    public boolean hasTo() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    public String getTo() {
-      java.lang.Object ref = to_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          to_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getToBytes() {
-      java.lang.Object ref = to_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        to_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // required string room = 5;
-    public static final int ROOM_FIELD_NUMBER = 5;
-    private java.lang.Object room_;
-    public boolean hasRoom() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
     public String getRoom() {
       java.lang.Object ref = room_;
       if (ref instanceof String) {
@@ -9696,7 +8139,6 @@ public final class Esse3 {
       }
     }
     
-<<<<<<< HEAD
     // required int64 from = 5;
     public static final int FROM_FIELD_NUMBER = 5;
     private long from_;
@@ -9725,16 +8167,6 @@ public final class Esse3 {
     }
     public String getType() {
       java.lang.Object ref = type_;
-=======
-    // required string teacher = 6;
-    public static final int TEACHER_FIELD_NUMBER = 6;
-    private java.lang.Object teacher_;
-    public boolean hasTeacher() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    public String getTeacher() {
-      java.lang.Object ref = teacher_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -9742,30 +8174,17 @@ public final class Esse3 {
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-<<<<<<< HEAD
           type_ = s;
-=======
-          teacher_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         return s;
       }
     }
-<<<<<<< HEAD
     private com.google.protobuf.ByteString getTypeBytes() {
       java.lang.Object ref = type_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
         type_ = b;
-=======
-    private com.google.protobuf.ByteString getTeacherBytes() {
-      java.lang.Object ref = teacher_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        teacher_ = b;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -9773,7 +8192,6 @@ public final class Esse3 {
     }
     
     private void initFields() {
-<<<<<<< HEAD
       id_ = "";
       title_ = "";
       teacher_ = "";
@@ -9781,21 +8199,12 @@ public final class Esse3 {
       from_ = 0L;
       to_ = 0L;
       type_ = "";
-=======
-      type_ = "";
-      date_ = "";
-      from_ = "";
-      to_ = "";
-      room_ = "";
-      teacher_ = "";
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-<<<<<<< HEAD
       if (!hasId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -9821,29 +8230,6 @@ public final class Esse3 {
         return false;
       }
       if (!hasType()) {
-=======
-      if (!hasType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasDate()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasFrom()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTo()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasRoom()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTeacher()) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         memoizedIsInitialized = 0;
         return false;
       }
@@ -9855,7 +8241,6 @@ public final class Esse3 {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-<<<<<<< HEAD
         output.writeBytes(1, getIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -9875,24 +8260,6 @@ public final class Esse3 {
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         output.writeBytes(7, getTypeBytes());
-=======
-        output.writeBytes(1, getTypeBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getDateBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getFromBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(4, getToBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeBytes(5, getRoomBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeBytes(6, getTeacherBytes());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       getUnknownFields().writeTo(output);
     }
@@ -9905,7 +8272,6 @@ public final class Esse3 {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-<<<<<<< HEAD
           .computeBytesSize(1, getIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -9931,29 +8297,6 @@ public final class Esse3 {
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(7, getTypeBytes());
-=======
-          .computeBytesSize(1, getTypeBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getDateBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getFromBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, getToBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, getRoomBytes());
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(6, getTeacherBytes());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -9967,69 +8310,41 @@ public final class Esse3 {
       return super.writeReplace();
     }
     
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseDelimitedFrom(java.io.InputStream input)
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseDelimitedFrom(java.io.InputStream input)
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -10038,11 +8353,7 @@ public final class Esse3 {
         return null;
       }
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseDelimitedFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseDelimitedFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -10053,20 +8364,12 @@ public final class Esse3 {
         return null;
       }
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.Orari parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -10076,11 +8379,7 @@ public final class Esse3 {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-<<<<<<< HEAD
     public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.CalendarCds prototype) {
-=======
-    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Orari prototype) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -10093,32 +8392,18 @@ public final class Esse3 {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-<<<<<<< HEAD
        implements smartcampus.service.esse3.data.message.Esse3.CalendarCdsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_CalendarCds_descriptor;
-=======
-       implements smartcampus.service.esse3.data.message.Esse3.OrariOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_descriptor;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-<<<<<<< HEAD
         return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_CalendarCds_fieldAccessorTable;
       }
       
       // Construct using smartcampus.service.esse3.data.message.Esse3.CalendarCds.newBuilder()
-=======
-        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Orari_fieldAccessorTable;
-      }
-      
-      // Construct using smartcampus.service.esse3.data.message.Esse3.Orari.newBuilder()
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -10137,7 +8422,6 @@ public final class Esse3 {
       
       public Builder clear() {
         super.clear();
-<<<<<<< HEAD
         id_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         title_ = "";
@@ -10152,20 +8436,6 @@ public final class Esse3 {
         bitField0_ = (bitField0_ & ~0x00000020);
         type_ = "";
         bitField0_ = (bitField0_ & ~0x00000040);
-=======
-        type_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        date_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        from_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        to_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
-        room_ = "";
-        bitField0_ = (bitField0_ & ~0x00000010);
-        teacher_ = "";
-        bitField0_ = (bitField0_ & ~0x00000020);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return this;
       }
       
@@ -10175,7 +8445,6 @@ public final class Esse3 {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-<<<<<<< HEAD
         return smartcampus.service.esse3.data.message.Esse3.CalendarCds.getDescriptor();
       }
       
@@ -10185,32 +8454,15 @@ public final class Esse3 {
       
       public smartcampus.service.esse3.data.message.Esse3.CalendarCds build() {
         smartcampus.service.esse3.data.message.Esse3.CalendarCds result = buildPartial();
-=======
-        return smartcampus.service.esse3.data.message.Esse3.Orari.getDescriptor();
-      }
-      
-      public smartcampus.service.esse3.data.message.Esse3.Orari getDefaultInstanceForType() {
-        return smartcampus.service.esse3.data.message.Esse3.Orari.getDefaultInstance();
-      }
-      
-      public smartcampus.service.esse3.data.message.Esse3.Orari build() {
-        smartcampus.service.esse3.data.message.Esse3.Orari result = buildPartial();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-<<<<<<< HEAD
       private smartcampus.service.esse3.data.message.Esse3.CalendarCds buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
         smartcampus.service.esse3.data.message.Esse3.CalendarCds result = buildPartial();
-=======
-      private smartcampus.service.esse3.data.message.Esse3.Orari buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        smartcampus.service.esse3.data.message.Esse3.Orari result = buildPartial();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -10218,19 +8470,13 @@ public final class Esse3 {
         return result;
       }
       
-<<<<<<< HEAD
       public smartcampus.service.esse3.data.message.Esse3.CalendarCds buildPartial() {
         smartcampus.service.esse3.data.message.Esse3.CalendarCds result = new smartcampus.service.esse3.data.message.Esse3.CalendarCds(this);
-=======
-      public smartcampus.service.esse3.data.message.Esse3.Orari buildPartial() {
-        smartcampus.service.esse3.data.message.Esse3.Orari result = new smartcampus.service.esse3.data.message.Esse3.Orari(this);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-<<<<<<< HEAD
         result.id_ = id_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
@@ -10256,49 +8502,20 @@ public final class Esse3 {
           to_bitField0_ |= 0x00000040;
         }
         result.type_ = type_;
-=======
-        result.type_ = type_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.date_ = date_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.from_ = from_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.to_ = to_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.room_ = room_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.teacher_ = teacher_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-<<<<<<< HEAD
         if (other instanceof smartcampus.service.esse3.data.message.Esse3.CalendarCds) {
           return mergeFrom((smartcampus.service.esse3.data.message.Esse3.CalendarCds)other);
-=======
-        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Orari) {
-          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Orari)other);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-<<<<<<< HEAD
       public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.CalendarCds other) {
         if (other == smartcampus.service.esse3.data.message.Esse3.CalendarCds.getDefaultInstance()) return this;
         if (other.hasId()) {
@@ -10321,34 +8538,12 @@ public final class Esse3 {
         }
         if (other.hasType()) {
           setType(other.getType());
-=======
-      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Orari other) {
-        if (other == smartcampus.service.esse3.data.message.Esse3.Orari.getDefaultInstance()) return this;
-        if (other.hasType()) {
-          setType(other.getType());
-        }
-        if (other.hasDate()) {
-          setDate(other.getDate());
-        }
-        if (other.hasFrom()) {
-          setFrom(other.getFrom());
-        }
-        if (other.hasTo()) {
-          setTo(other.getTo());
-        }
-        if (other.hasRoom()) {
-          setRoom(other.getRoom());
-        }
-        if (other.hasTeacher()) {
-          setTeacher(other.getTeacher());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
       
       public final boolean isInitialized() {
-<<<<<<< HEAD
         if (!hasId()) {
           
           return false;
@@ -10374,29 +8569,6 @@ public final class Esse3 {
           return false;
         }
         if (!hasType()) {
-=======
-        if (!hasType()) {
-          
-          return false;
-        }
-        if (!hasDate()) {
-          
-          return false;
-        }
-        if (!hasFrom()) {
-          
-          return false;
-        }
-        if (!hasTo()) {
-          
-          return false;
-        }
-        if (!hasRoom()) {
-          
-          return false;
-        }
-        if (!hasTeacher()) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           
           return false;
         }
@@ -10428,34 +8600,21 @@ public final class Esse3 {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-<<<<<<< HEAD
               id_ = input.readBytes();
-=======
-              type_ = input.readBytes();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
               break;
             }
             case 18: {
               bitField0_ |= 0x00000002;
-<<<<<<< HEAD
               title_ = input.readBytes();
-=======
-              date_ = input.readBytes();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
               break;
             }
             case 26: {
               bitField0_ |= 0x00000004;
-<<<<<<< HEAD
               teacher_ = input.readBytes();
-=======
-              from_ = input.readBytes();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
               break;
             }
             case 34: {
               bitField0_ |= 0x00000008;
-<<<<<<< HEAD
               room_ = input.readBytes();
               break;
             }
@@ -10472,19 +8631,6 @@ public final class Esse3 {
             case 58: {
               bitField0_ |= 0x00000040;
               type_ = input.readBytes();
-=======
-              to_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              bitField0_ |= 0x00000010;
-              room_ = input.readBytes();
-              break;
-            }
-            case 50: {
-              bitField0_ |= 0x00000020;
-              teacher_ = input.readBytes();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
               break;
             }
           }
@@ -10493,7 +8639,6 @@ public final class Esse3 {
       
       private int bitField0_;
       
-<<<<<<< HEAD
       // required string id = 1;
       private java.lang.Object id_ = "";
       public boolean hasId() {
@@ -10504,33 +8649,16 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           id_ = s;
-=======
-      // required string type = 1;
-      private java.lang.Object type_ = "";
-      public boolean hasType() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          type_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           return s;
         } else {
           return (String) ref;
         }
       }
-<<<<<<< HEAD
       public Builder setId(String value) {
-=======
-      public Builder setType(String value) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-<<<<<<< HEAD
         id_ = value;
         onChanged();
         return this;
@@ -10557,49 +8685,16 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           title_ = s;
-=======
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearType() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      void setType(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
-        type_ = value;
-        onChanged();
-      }
-      
-      // required string date = 2;
-      private java.lang.Object date_ = "";
-      public boolean hasDate() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public String getDate() {
-        java.lang.Object ref = date_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          date_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           return s;
         } else {
           return (String) ref;
         }
       }
-<<<<<<< HEAD
       public Builder setTitle(String value) {
-=======
-      public Builder setDate(String value) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000002;
-<<<<<<< HEAD
         title_ = value;
         onChanged();
         return this;
@@ -10626,49 +8721,16 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           teacher_ = s;
-=======
-        date_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearDate() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        date_ = getDefaultInstance().getDate();
-        onChanged();
-        return this;
-      }
-      void setDate(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
-        date_ = value;
-        onChanged();
-      }
-      
-      // required string from = 3;
-      private java.lang.Object from_ = "";
-      public boolean hasFrom() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public String getFrom() {
-        java.lang.Object ref = from_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          from_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
           return s;
         } else {
           return (String) ref;
         }
       }
-<<<<<<< HEAD
       public Builder setTeacher(String value) {
-=======
-      public Builder setFrom(String value) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000004;
-<<<<<<< HEAD
         teacher_ = value;
         onChanged();
         return this;
@@ -10718,48 +8780,8 @@ public final class Esse3 {
       void setRoom(com.google.protobuf.ByteString value) {
         bitField0_ |= 0x00000008;
         room_ = value;
-=======
-        from_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearFrom() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        from_ = getDefaultInstance().getFrom();
-        onChanged();
-        return this;
-      }
-      void setFrom(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
-        from_ = value;
         onChanged();
       }
-      
-      // required string to = 4;
-      private java.lang.Object to_ = "";
-      public boolean hasTo() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      public String getTo() {
-        java.lang.Object ref = to_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          to_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setTo(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        to_ = value;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-        onChanged();
-      }
-<<<<<<< HEAD
       
       // required int64 from = 5;
       private long from_ ;
@@ -10778,22 +8800,10 @@ public final class Esse3 {
       public Builder clearFrom() {
         bitField0_ = (bitField0_ & ~0x00000010);
         from_ = 0L;
-=======
-      public Builder clearTo() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        to_ = getDefaultInstance().getTo();
-        onChanged();
-        return this;
-      }
-      void setTo(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000008;
-        to_ = value;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         onChanged();
         return this;
       }
       
-<<<<<<< HEAD
       // required int64 to = 6;
       private long to_ ;
       public boolean hasTo() {
@@ -10825,60 +8835,11 @@ public final class Esse3 {
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           type_ = s;
-=======
-      // required string room = 5;
-      private java.lang.Object room_ = "";
-      public boolean hasRoom() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      public String getRoom() {
-        java.lang.Object ref = room_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          room_ = s;
           return s;
         } else {
           return (String) ref;
         }
       }
-      public Builder setRoom(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        room_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearRoom() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        room_ = getDefaultInstance().getRoom();
-        onChanged();
-        return this;
-      }
-      void setRoom(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000010;
-        room_ = value;
-        onChanged();
-      }
-      
-      // required string teacher = 6;
-      private java.lang.Object teacher_ = "";
-      public boolean hasTeacher() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      public String getTeacher() {
-        java.lang.Object ref = teacher_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          teacher_ = s;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-<<<<<<< HEAD
       public Builder setType(String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -10934,20 +8895,25 @@ public final class Esse3 {
     int getDescrizioneCount();
     String getDescrizione(int index);
     
-    // repeated string docenti = 5;
-    java.util.List<String> getDocentiList();
+    // repeated .smartcampus.service.esse3.data.message.Docenti docenti = 5;
+    java.util.List<smartcampus.service.esse3.data.message.Esse3.Docenti> 
+        getDocentiList();
+    smartcampus.service.esse3.data.message.Esse3.Docenti getDocenti(int index);
     int getDocentiCount();
-    String getDocenti(int index);
+    java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder> 
+        getDocentiOrBuilderList();
+    smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder getDocentiOrBuilder(
+        int index);
     
-    // repeated string aula = 6;
-    java.util.List<String> getAulaList();
-    int getAulaCount();
-    String getAula(int index);
-    
-    // repeated string edificio = 7;
-    java.util.List<String> getEdificioList();
-    int getEdificioCount();
-    String getEdificio(int index);
+    // repeated .smartcampus.service.esse3.data.message.Luogo luogo = 6;
+    java.util.List<smartcampus.service.esse3.data.message.Esse3.Luogo> 
+        getLuogoList();
+    smartcampus.service.esse3.data.message.Esse3.Luogo getLuogo(int index);
+    int getLuogoCount();
+    java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder> 
+        getLuogoOrBuilderList();
+    smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder getLuogoOrBuilder(
+        int index);
   }
   public static final class ADCalendarTable extends
       com.google.protobuf.GeneratedMessage
@@ -10964,101 +8930,16 @@ public final class Esse3 {
     }
     
     public ADCalendarTable getDefaultInstanceForType() {
-=======
-      public Builder setTeacher(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000020;
-        teacher_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearTeacher() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        teacher_ = getDefaultInstance().getTeacher();
-        onChanged();
-        return this;
-      }
-      void setTeacher(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000020;
-        teacher_ = value;
-        onChanged();
-      }
-      
-      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Orari)
-    }
-    
-    static {
-      defaultInstance = new Orari(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Orari)
-  }
-  
-  public interface CalendarCdsOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-    
-    // required string id = 1;
-    boolean hasId();
-    String getId();
-    
-    // required string title = 2;
-    boolean hasTitle();
-    String getTitle();
-    
-    // required string teacher = 3;
-    boolean hasTeacher();
-    String getTeacher();
-    
-    // required string room = 4;
-    boolean hasRoom();
-    String getRoom();
-    
-    // required int64 from = 5;
-    boolean hasFrom();
-    long getFrom();
-    
-    // required int64 to = 6;
-    boolean hasTo();
-    long getTo();
-    
-    // required string type = 7;
-    boolean hasType();
-    String getType();
-  }
-  public static final class CalendarCds extends
-      com.google.protobuf.GeneratedMessage
-      implements CalendarCdsOrBuilder {
-    // Use CalendarCds.newBuilder() to construct.
-    private CalendarCds(Builder builder) {
-      super(builder);
-    }
-    private CalendarCds(boolean noInit) {}
-    
-    private static final CalendarCds defaultInstance;
-    public static CalendarCds getDefaultInstance() {
-      return defaultInstance;
-    }
-    
-    public CalendarCds getDefaultInstanceForType() {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-<<<<<<< HEAD
       return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_descriptor;
-=======
-      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_CalendarCds_descriptor;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-<<<<<<< HEAD
       return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_fieldAccessorTable;
     }
     
@@ -11118,154 +8999,46 @@ public final class Esse3 {
       return descrizione_.get(index);
     }
     
-    // repeated string docenti = 5;
+    // repeated .smartcampus.service.esse3.data.message.Docenti docenti = 5;
     public static final int DOCENTI_FIELD_NUMBER = 5;
-    private com.google.protobuf.LazyStringList docenti_;
-    public java.util.List<String>
-        getDocentiList() {
+    private java.util.List<smartcampus.service.esse3.data.message.Esse3.Docenti> docenti_;
+    public java.util.List<smartcampus.service.esse3.data.message.Esse3.Docenti> getDocentiList() {
       return docenti_;
-=======
-      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_CalendarCds_fieldAccessorTable;
     }
-    
-    private int bitField0_;
-    // required string id = 1;
-    public static final int ID_FIELD_NUMBER = 1;
-    private java.lang.Object id_;
-    public boolean hasId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public String getId() {
-      java.lang.Object ref = id_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          id_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getIdBytes() {
-      java.lang.Object ref = id_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        id_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // required string title = 2;
-    public static final int TITLE_FIELD_NUMBER = 2;
-    private java.lang.Object title_;
-    public boolean hasTitle() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public String getTitle() {
-      java.lang.Object ref = title_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          title_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getTitleBytes() {
-      java.lang.Object ref = title_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        title_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // required string teacher = 3;
-    public static final int TEACHER_FIELD_NUMBER = 3;
-    private java.lang.Object teacher_;
-    public boolean hasTeacher() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public String getTeacher() {
-      java.lang.Object ref = teacher_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          teacher_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getTeacherBytes() {
-      java.lang.Object ref = teacher_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        teacher_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // required string room = 4;
-    public static final int ROOM_FIELD_NUMBER = 4;
-    private java.lang.Object room_;
-    public boolean hasRoom() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+    public java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder> 
+        getDocentiOrBuilderList() {
+      return docenti_;
     }
     public int getDocentiCount() {
       return docenti_.size();
     }
-    public String getDocenti(int index) {
+    public smartcampus.service.esse3.data.message.Esse3.Docenti getDocenti(int index) {
+      return docenti_.get(index);
+    }
+    public smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder getDocentiOrBuilder(
+        int index) {
       return docenti_.get(index);
     }
     
-<<<<<<< HEAD
-    // repeated string aula = 6;
-    public static final int AULA_FIELD_NUMBER = 6;
-    private com.google.protobuf.LazyStringList aula_;
-    public java.util.List<String>
-        getAulaList() {
-      return aula_;
+    // repeated .smartcampus.service.esse3.data.message.Luogo luogo = 6;
+    public static final int LUOGO_FIELD_NUMBER = 6;
+    private java.util.List<smartcampus.service.esse3.data.message.Esse3.Luogo> luogo_;
+    public java.util.List<smartcampus.service.esse3.data.message.Esse3.Luogo> getLuogoList() {
+      return luogo_;
     }
-    public int getAulaCount() {
-      return aula_.size();
+    public java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder> 
+        getLuogoOrBuilderList() {
+      return luogo_;
     }
-    public String getAula(int index) {
-      return aula_.get(index);
+    public int getLuogoCount() {
+      return luogo_.size();
     }
-    
-    // repeated string edificio = 7;
-    public static final int EDIFICIO_FIELD_NUMBER = 7;
-    private com.google.protobuf.LazyStringList edificio_;
-    public java.util.List<String>
-        getEdificioList() {
-      return edificio_;
+    public smartcampus.service.esse3.data.message.Esse3.Luogo getLuogo(int index) {
+      return luogo_.get(index);
     }
-    public int getEdificioCount() {
-      return edificio_.size();
-    }
-    public String getEdificio(int index) {
-      return edificio_.get(index);
+    public smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder getLuogoOrBuilder(
+        int index) {
+      return luogo_.get(index);
     }
     
     private void initFields() {
@@ -11273,108 +9046,14 @@ public final class Esse3 {
       ora_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       tipologia_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       descrizione_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      docenti_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      aula_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      edificio_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-=======
-    // required int64 from = 5;
-    public static final int FROM_FIELD_NUMBER = 5;
-    private long from_;
-    public boolean hasFrom() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    public long getFrom() {
-      return from_;
-    }
-    
-    // required int64 to = 6;
-    public static final int TO_FIELD_NUMBER = 6;
-    private long to_;
-    public boolean hasTo() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    public long getTo() {
-      return to_;
-    }
-    
-    // required string type = 7;
-    public static final int TYPE_FIELD_NUMBER = 7;
-    private java.lang.Object type_;
-    public boolean hasType() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    public String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          type_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    private void initFields() {
-      id_ = "";
-      title_ = "";
-      teacher_ = "";
-      room_ = "";
-      from_ = 0L;
-      to_ = 0L;
-      type_ = "";
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+      docenti_ = java.util.Collections.emptyList();
+      luogo_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-<<<<<<< HEAD
-=======
-      if (!hasId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTitle()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTeacher()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasRoom()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasFrom()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTo()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       memoizedIsInitialized = 1;
       return true;
     }
@@ -11382,7 +9061,6 @@ public final class Esse3 {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-<<<<<<< HEAD
       for (int i = 0; i < data_.size(); i++) {
         output.writeBytes(1, data_.getByteString(i));
       }
@@ -11396,35 +9074,10 @@ public final class Esse3 {
         output.writeBytes(4, descrizione_.getByteString(i));
       }
       for (int i = 0; i < docenti_.size(); i++) {
-        output.writeBytes(5, docenti_.getByteString(i));
+        output.writeMessage(5, docenti_.get(i));
       }
-      for (int i = 0; i < aula_.size(); i++) {
-        output.writeBytes(6, aula_.getByteString(i));
-      }
-      for (int i = 0; i < edificio_.size(); i++) {
-        output.writeBytes(7, edificio_.getByteString(i));
-=======
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getIdBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getTitleBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getTeacherBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(4, getRoomBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt64(5, from_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt64(6, to_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeBytes(7, getTypeBytes());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+      for (int i = 0; i < luogo_.size(); i++) {
+        output.writeMessage(6, luogo_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -11435,7 +9088,6 @@ public final class Esse3 {
       if (size != -1) return size;
     
       size = 0;
-<<<<<<< HEAD
       {
         int dataSize = 0;
         for (int i = 0; i < data_.size(); i++) {
@@ -11472,61 +9124,13 @@ public final class Esse3 {
         size += dataSize;
         size += 1 * getDescrizioneList().size();
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < docenti_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeBytesSizeNoTag(docenti_.getByteString(i));
-        }
-        size += dataSize;
-        size += 1 * getDocentiList().size();
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < aula_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeBytesSizeNoTag(aula_.getByteString(i));
-        }
-        size += dataSize;
-        size += 1 * getAulaList().size();
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < edificio_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeBytesSizeNoTag(edificio_.getByteString(i));
-        }
-        size += dataSize;
-        size += 1 * getEdificioList().size();
-=======
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      for (int i = 0; i < docenti_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getIdBytes());
+          .computeMessageSize(5, docenti_.get(i));
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      for (int i = 0; i < luogo_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getTitleBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getTeacherBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, getRoomBytes());
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(5, from_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(6, to_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(7, getTypeBytes());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+          .computeMessageSize(6, luogo_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -11540,69 +9144,41 @@ public final class Esse3 {
       return super.writeReplace();
     }
     
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseDelimitedFrom(java.io.InputStream input)
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseDelimitedFrom(java.io.InputStream input)
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -11611,11 +9187,7 @@ public final class Esse3 {
         return null;
       }
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseDelimitedFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseDelimitedFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -11626,20 +9198,12 @@ public final class Esse3 {
         return null;
       }
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-<<<<<<< HEAD
     public static smartcampus.service.esse3.data.message.Esse3.ADCalendarTable parseFrom(
-=======
-    public static smartcampus.service.esse3.data.message.Esse3.CalendarCds parseFrom(
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -11649,11 +9213,7 @@ public final class Esse3 {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-<<<<<<< HEAD
     public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.ADCalendarTable prototype) {
-=======
-    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.CalendarCds prototype) {
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -11666,32 +9226,18 @@ public final class Esse3 {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-<<<<<<< HEAD
        implements smartcampus.service.esse3.data.message.Esse3.ADCalendarTableOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_descriptor;
-=======
-       implements smartcampus.service.esse3.data.message.Esse3.CalendarCdsOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_CalendarCds_descriptor;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-<<<<<<< HEAD
         return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_fieldAccessorTable;
       }
       
       // Construct using smartcampus.service.esse3.data.message.Esse3.ADCalendarTable.newBuilder()
-=======
-        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_CalendarCds_fieldAccessorTable;
-      }
-      
-      // Construct using smartcampus.service.esse3.data.message.Esse3.CalendarCds.newBuilder()
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -11702,6 +9248,8 @@ public final class Esse3 {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getDocentiFieldBuilder();
+          getLuogoFieldBuilder();
         }
       }
       private static Builder create() {
@@ -11710,7 +9258,6 @@ public final class Esse3 {
       
       public Builder clear() {
         super.clear();
-<<<<<<< HEAD
         data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000001);
         ora_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -11719,27 +9266,18 @@ public final class Esse3 {
         bitField0_ = (bitField0_ & ~0x00000004);
         descrizione_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000008);
-        docenti_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        aula_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        edificio_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-=======
-        id_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        title_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        teacher_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        room_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
-        from_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        to_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        type_ = "";
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-        bitField0_ = (bitField0_ & ~0x00000040);
+        if (docentiBuilder_ == null) {
+          docenti_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        } else {
+          docentiBuilder_.clear();
+        }
+        if (luogoBuilder_ == null) {
+          luogo_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        } else {
+          luogoBuilder_.clear();
+        }
         return this;
       }
       
@@ -11749,7 +9287,6 @@ public final class Esse3 {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-<<<<<<< HEAD
         return smartcampus.service.esse3.data.message.Esse3.ADCalendarTable.getDescriptor();
       }
       
@@ -11759,32 +9296,15 @@ public final class Esse3 {
       
       public smartcampus.service.esse3.data.message.Esse3.ADCalendarTable build() {
         smartcampus.service.esse3.data.message.Esse3.ADCalendarTable result = buildPartial();
-=======
-        return smartcampus.service.esse3.data.message.Esse3.CalendarCds.getDescriptor();
-      }
-      
-      public smartcampus.service.esse3.data.message.Esse3.CalendarCds getDefaultInstanceForType() {
-        return smartcampus.service.esse3.data.message.Esse3.CalendarCds.getDefaultInstance();
-      }
-      
-      public smartcampus.service.esse3.data.message.Esse3.CalendarCds build() {
-        smartcampus.service.esse3.data.message.Esse3.CalendarCds result = buildPartial();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-<<<<<<< HEAD
       private smartcampus.service.esse3.data.message.Esse3.ADCalendarTable buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
         smartcampus.service.esse3.data.message.Esse3.ADCalendarTable result = buildPartial();
-=======
-      private smartcampus.service.esse3.data.message.Esse3.CalendarCds buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        smartcampus.service.esse3.data.message.Esse3.CalendarCds result = buildPartial();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -11792,13 +9312,8 @@ public final class Esse3 {
         return result;
       }
       
-<<<<<<< HEAD
       public smartcampus.service.esse3.data.message.Esse3.ADCalendarTable buildPartial() {
         smartcampus.service.esse3.data.message.Esse3.ADCalendarTable result = new smartcampus.service.esse3.data.message.Esse3.ADCalendarTable(this);
-=======
-      public smartcampus.service.esse3.data.message.Esse3.CalendarCds buildPartial() {
-        smartcampus.service.esse3.data.message.Esse3.CalendarCds result = new smartcampus.service.esse3.data.message.Esse3.CalendarCds(this);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
           data_ = new com.google.protobuf.UnmodifiableLazyStringList(
@@ -11811,7 +9326,6 @@ public final class Esse3 {
               ora_);
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-<<<<<<< HEAD
         result.ora_ = ora_;
         if (((bitField0_ & 0x00000004) == 0x00000004)) {
           tipologia_ = new com.google.protobuf.UnmodifiableLazyStringList(
@@ -11825,71 +9339,37 @@ public final class Esse3 {
           bitField0_ = (bitField0_ & ~0x00000008);
         }
         result.descrizione_ = descrizione_;
-        if (((bitField0_ & 0x00000010) == 0x00000010)) {
-          docenti_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              docenti_);
-          bitField0_ = (bitField0_ & ~0x00000010);
+        if (docentiBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) == 0x00000010)) {
+            docenti_ = java.util.Collections.unmodifiableList(docenti_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.docenti_ = docenti_;
+        } else {
+          result.docenti_ = docentiBuilder_.build();
         }
-        result.docenti_ = docenti_;
-        if (((bitField0_ & 0x00000020) == 0x00000020)) {
-          aula_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              aula_);
-          bitField0_ = (bitField0_ & ~0x00000020);
+        if (luogoBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020)) {
+            luogo_ = java.util.Collections.unmodifiableList(luogo_);
+            bitField0_ = (bitField0_ & ~0x00000020);
+          }
+          result.luogo_ = luogo_;
+        } else {
+          result.luogo_ = luogoBuilder_.build();
         }
-        result.aula_ = aula_;
-        if (((bitField0_ & 0x00000040) == 0x00000040)) {
-          edificio_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              edificio_);
-          bitField0_ = (bitField0_ & ~0x00000040);
-        }
-        result.edificio_ = edificio_;
-=======
-        result.id_ = id_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.title_ = title_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.teacher_ = teacher_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.room_ = room_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.from_ = from_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.to_ = to_;
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.type_ = type_;
-        result.bitField0_ = to_bitField0_;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         onBuilt();
         return result;
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-<<<<<<< HEAD
         if (other instanceof smartcampus.service.esse3.data.message.Esse3.ADCalendarTable) {
           return mergeFrom((smartcampus.service.esse3.data.message.Esse3.ADCalendarTable)other);
-=======
-        if (other instanceof smartcampus.service.esse3.data.message.Esse3.CalendarCds) {
-          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.CalendarCds)other);
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-<<<<<<< HEAD
       public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.ADCalendarTable other) {
         if (other == smartcampus.service.esse3.data.message.Esse3.ADCalendarTable.getDefaultInstance()) return this;
         if (!other.data_.isEmpty()) {
@@ -11911,21 +9391,6 @@ public final class Esse3 {
             ora_.addAll(other.ora_);
           }
           onChanged();
-=======
-      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.CalendarCds other) {
-        if (other == smartcampus.service.esse3.data.message.Esse3.CalendarCds.getDefaultInstance()) return this;
-        if (other.hasId()) {
-          setId(other.getId());
-        }
-        if (other.hasTitle()) {
-          setTitle(other.getTitle());
-        }
-        if (other.hasTeacher()) {
-          setTeacher(other.getTeacher());
-        }
-        if (other.hasRoom()) {
-          setRoom(other.getRoom());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         if (!other.tipologia_.isEmpty()) {
           if (tipologia_.isEmpty()) {
@@ -11947,77 +9412,63 @@ public final class Esse3 {
           }
           onChanged();
         }
-<<<<<<< HEAD
-        if (!other.docenti_.isEmpty()) {
-          if (docenti_.isEmpty()) {
-            docenti_ = other.docenti_;
-            bitField0_ = (bitField0_ & ~0x00000010);
-          } else {
-            ensureDocentiIsMutable();
-            docenti_.addAll(other.docenti_);
+        if (docentiBuilder_ == null) {
+          if (!other.docenti_.isEmpty()) {
+            if (docenti_.isEmpty()) {
+              docenti_ = other.docenti_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensureDocentiIsMutable();
+              docenti_.addAll(other.docenti_);
+            }
+            onChanged();
           }
-          onChanged();
+        } else {
+          if (!other.docenti_.isEmpty()) {
+            if (docentiBuilder_.isEmpty()) {
+              docentiBuilder_.dispose();
+              docentiBuilder_ = null;
+              docenti_ = other.docenti_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              docentiBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getDocentiFieldBuilder() : null;
+            } else {
+              docentiBuilder_.addAllMessages(other.docenti_);
+            }
+          }
         }
-        if (!other.aula_.isEmpty()) {
-          if (aula_.isEmpty()) {
-            aula_ = other.aula_;
-            bitField0_ = (bitField0_ & ~0x00000020);
-          } else {
-            ensureAulaIsMutable();
-            aula_.addAll(other.aula_);
+        if (luogoBuilder_ == null) {
+          if (!other.luogo_.isEmpty()) {
+            if (luogo_.isEmpty()) {
+              luogo_ = other.luogo_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+            } else {
+              ensureLuogoIsMutable();
+              luogo_.addAll(other.luogo_);
+            }
+            onChanged();
           }
-          onChanged();
-        }
-        if (!other.edificio_.isEmpty()) {
-          if (edificio_.isEmpty()) {
-            edificio_ = other.edificio_;
-            bitField0_ = (bitField0_ & ~0x00000040);
-          } else {
-            ensureEdificioIsMutable();
-            edificio_.addAll(other.edificio_);
+        } else {
+          if (!other.luogo_.isEmpty()) {
+            if (luogoBuilder_.isEmpty()) {
+              luogoBuilder_.dispose();
+              luogoBuilder_ = null;
+              luogo_ = other.luogo_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+              luogoBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getLuogoFieldBuilder() : null;
+            } else {
+              luogoBuilder_.addAllMessages(other.luogo_);
+            }
           }
-          onChanged();
-=======
-        if (other.hasType()) {
-          setType(other.getType());
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
       
       public final boolean isInitialized() {
-<<<<<<< HEAD
-=======
-        if (!hasId()) {
-          
-          return false;
-        }
-        if (!hasTitle()) {
-          
-          return false;
-        }
-        if (!hasTeacher()) {
-          
-          return false;
-        }
-        if (!hasRoom()) {
-          
-          return false;
-        }
-        if (!hasFrom()) {
-          
-          return false;
-        }
-        if (!hasTo()) {
-          
-          return false;
-        }
-        if (!hasType()) {
-          
-          return false;
-        }
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
         return true;
       }
       
@@ -12045,7 +9496,6 @@ public final class Esse3 {
               break;
             }
             case 10: {
-<<<<<<< HEAD
               ensureDataIsMutable();
               data_.add(input.readBytes());
               break;
@@ -12066,52 +9516,15 @@ public final class Esse3 {
               break;
             }
             case 42: {
-              ensureDocentiIsMutable();
-              docenti_.add(input.readBytes());
+              smartcampus.service.esse3.data.message.Esse3.Docenti.Builder subBuilder = smartcampus.service.esse3.data.message.Esse3.Docenti.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addDocenti(subBuilder.buildPartial());
               break;
             }
             case 50: {
-              ensureAulaIsMutable();
-              aula_.add(input.readBytes());
-              break;
-            }
-            case 58: {
-              ensureEdificioIsMutable();
-              edificio_.add(input.readBytes());
-=======
-              bitField0_ |= 0x00000001;
-              id_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              title_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              teacher_ = input.readBytes();
-              break;
-            }
-            case 34: {
-              bitField0_ |= 0x00000008;
-              room_ = input.readBytes();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              from_ = input.readInt64();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000020;
-              to_ = input.readInt64();
-              break;
-            }
-            case 58: {
-              bitField0_ |= 0x00000040;
-              type_ = input.readBytes();
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+              smartcampus.service.esse3.data.message.Esse3.Luogo.Builder subBuilder = smartcampus.service.esse3.data.message.Esse3.Luogo.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addLuogo(subBuilder.buildPartial());
               break;
             }
           }
@@ -12120,7 +9533,6 @@ public final class Esse3 {
       
       private int bitField0_;
       
-<<<<<<< HEAD
       // repeated string data = 1;
       private com.google.protobuf.LazyStringList data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureDataIsMutable() {
@@ -12345,68 +9757,1161 @@ public final class Esse3 {
         onChanged();
       }
       
-      // repeated string docenti = 5;
-      private com.google.protobuf.LazyStringList docenti_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      // repeated .smartcampus.service.esse3.data.message.Docenti docenti = 5;
+      private java.util.List<smartcampus.service.esse3.data.message.Esse3.Docenti> docenti_ =
+        java.util.Collections.emptyList();
       private void ensureDocentiIsMutable() {
         if (!((bitField0_ & 0x00000010) == 0x00000010)) {
-          docenti_ = new com.google.protobuf.LazyStringArrayList(docenti_);
+          docenti_ = new java.util.ArrayList<smartcampus.service.esse3.data.message.Esse3.Docenti>(docenti_);
           bitField0_ |= 0x00000010;
          }
       }
-      public java.util.List<String>
-          getDocentiList() {
-        return java.util.Collections.unmodifiableList(docenti_);
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          smartcampus.service.esse3.data.message.Esse3.Docenti, smartcampus.service.esse3.data.message.Esse3.Docenti.Builder, smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder> docentiBuilder_;
+      
+      public java.util.List<smartcampus.service.esse3.data.message.Esse3.Docenti> getDocentiList() {
+        if (docentiBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(docenti_);
+        } else {
+          return docentiBuilder_.getMessageList();
+        }
       }
       public int getDocentiCount() {
-        return docenti_.size();
+        if (docentiBuilder_ == null) {
+          return docenti_.size();
+        } else {
+          return docentiBuilder_.getCount();
+        }
       }
-      public String getDocenti(int index) {
-        return docenti_.get(index);
+      public smartcampus.service.esse3.data.message.Esse3.Docenti getDocenti(int index) {
+        if (docentiBuilder_ == null) {
+          return docenti_.get(index);
+        } else {
+          return docentiBuilder_.getMessage(index);
+        }
       }
       public Builder setDocenti(
+          int index, smartcampus.service.esse3.data.message.Esse3.Docenti value) {
+        if (docentiBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDocentiIsMutable();
+          docenti_.set(index, value);
+          onChanged();
+        } else {
+          docentiBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setDocenti(
+          int index, smartcampus.service.esse3.data.message.Esse3.Docenti.Builder builderForValue) {
+        if (docentiBuilder_ == null) {
+          ensureDocentiIsMutable();
+          docenti_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          docentiBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addDocenti(smartcampus.service.esse3.data.message.Esse3.Docenti value) {
+        if (docentiBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDocentiIsMutable();
+          docenti_.add(value);
+          onChanged();
+        } else {
+          docentiBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addDocenti(
+          int index, smartcampus.service.esse3.data.message.Esse3.Docenti value) {
+        if (docentiBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDocentiIsMutable();
+          docenti_.add(index, value);
+          onChanged();
+        } else {
+          docentiBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addDocenti(
+          smartcampus.service.esse3.data.message.Esse3.Docenti.Builder builderForValue) {
+        if (docentiBuilder_ == null) {
+          ensureDocentiIsMutable();
+          docenti_.add(builderForValue.build());
+          onChanged();
+        } else {
+          docentiBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addDocenti(
+          int index, smartcampus.service.esse3.data.message.Esse3.Docenti.Builder builderForValue) {
+        if (docentiBuilder_ == null) {
+          ensureDocentiIsMutable();
+          docenti_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          docentiBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllDocenti(
+          java.lang.Iterable<? extends smartcampus.service.esse3.data.message.Esse3.Docenti> values) {
+        if (docentiBuilder_ == null) {
+          ensureDocentiIsMutable();
+          super.addAll(values, docenti_);
+          onChanged();
+        } else {
+          docentiBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearDocenti() {
+        if (docentiBuilder_ == null) {
+          docenti_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          docentiBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeDocenti(int index) {
+        if (docentiBuilder_ == null) {
+          ensureDocentiIsMutable();
+          docenti_.remove(index);
+          onChanged();
+        } else {
+          docentiBuilder_.remove(index);
+        }
+        return this;
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Docenti.Builder getDocentiBuilder(
+          int index) {
+        return getDocentiFieldBuilder().getBuilder(index);
+      }
+      public smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder getDocentiOrBuilder(
+          int index) {
+        if (docentiBuilder_ == null) {
+          return docenti_.get(index);  } else {
+          return docentiBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder> 
+           getDocentiOrBuilderList() {
+        if (docentiBuilder_ != null) {
+          return docentiBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(docenti_);
+        }
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Docenti.Builder addDocentiBuilder() {
+        return getDocentiFieldBuilder().addBuilder(
+            smartcampus.service.esse3.data.message.Esse3.Docenti.getDefaultInstance());
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Docenti.Builder addDocentiBuilder(
+          int index) {
+        return getDocentiFieldBuilder().addBuilder(
+            index, smartcampus.service.esse3.data.message.Esse3.Docenti.getDefaultInstance());
+      }
+      public java.util.List<smartcampus.service.esse3.data.message.Esse3.Docenti.Builder> 
+           getDocentiBuilderList() {
+        return getDocentiFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          smartcampus.service.esse3.data.message.Esse3.Docenti, smartcampus.service.esse3.data.message.Esse3.Docenti.Builder, smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder> 
+          getDocentiFieldBuilder() {
+        if (docentiBuilder_ == null) {
+          docentiBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              smartcampus.service.esse3.data.message.Esse3.Docenti, smartcampus.service.esse3.data.message.Esse3.Docenti.Builder, smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder>(
+                  docenti_,
+                  ((bitField0_ & 0x00000010) == 0x00000010),
+                  getParentForChildren(),
+                  isClean());
+          docenti_ = null;
+        }
+        return docentiBuilder_;
+      }
+      
+      // repeated .smartcampus.service.esse3.data.message.Luogo luogo = 6;
+      private java.util.List<smartcampus.service.esse3.data.message.Esse3.Luogo> luogo_ =
+        java.util.Collections.emptyList();
+      private void ensureLuogoIsMutable() {
+        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
+          luogo_ = new java.util.ArrayList<smartcampus.service.esse3.data.message.Esse3.Luogo>(luogo_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          smartcampus.service.esse3.data.message.Esse3.Luogo, smartcampus.service.esse3.data.message.Esse3.Luogo.Builder, smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder> luogoBuilder_;
+      
+      public java.util.List<smartcampus.service.esse3.data.message.Esse3.Luogo> getLuogoList() {
+        if (luogoBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(luogo_);
+        } else {
+          return luogoBuilder_.getMessageList();
+        }
+      }
+      public int getLuogoCount() {
+        if (luogoBuilder_ == null) {
+          return luogo_.size();
+        } else {
+          return luogoBuilder_.getCount();
+        }
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Luogo getLuogo(int index) {
+        if (luogoBuilder_ == null) {
+          return luogo_.get(index);
+        } else {
+          return luogoBuilder_.getMessage(index);
+        }
+      }
+      public Builder setLuogo(
+          int index, smartcampus.service.esse3.data.message.Esse3.Luogo value) {
+        if (luogoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLuogoIsMutable();
+          luogo_.set(index, value);
+          onChanged();
+        } else {
+          luogoBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setLuogo(
+          int index, smartcampus.service.esse3.data.message.Esse3.Luogo.Builder builderForValue) {
+        if (luogoBuilder_ == null) {
+          ensureLuogoIsMutable();
+          luogo_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          luogoBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addLuogo(smartcampus.service.esse3.data.message.Esse3.Luogo value) {
+        if (luogoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLuogoIsMutable();
+          luogo_.add(value);
+          onChanged();
+        } else {
+          luogoBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addLuogo(
+          int index, smartcampus.service.esse3.data.message.Esse3.Luogo value) {
+        if (luogoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLuogoIsMutable();
+          luogo_.add(index, value);
+          onChanged();
+        } else {
+          luogoBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addLuogo(
+          smartcampus.service.esse3.data.message.Esse3.Luogo.Builder builderForValue) {
+        if (luogoBuilder_ == null) {
+          ensureLuogoIsMutable();
+          luogo_.add(builderForValue.build());
+          onChanged();
+        } else {
+          luogoBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addLuogo(
+          int index, smartcampus.service.esse3.data.message.Esse3.Luogo.Builder builderForValue) {
+        if (luogoBuilder_ == null) {
+          ensureLuogoIsMutable();
+          luogo_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          luogoBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllLuogo(
+          java.lang.Iterable<? extends smartcampus.service.esse3.data.message.Esse3.Luogo> values) {
+        if (luogoBuilder_ == null) {
+          ensureLuogoIsMutable();
+          super.addAll(values, luogo_);
+          onChanged();
+        } else {
+          luogoBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearLuogo() {
+        if (luogoBuilder_ == null) {
+          luogo_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+          onChanged();
+        } else {
+          luogoBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeLuogo(int index) {
+        if (luogoBuilder_ == null) {
+          ensureLuogoIsMutable();
+          luogo_.remove(index);
+          onChanged();
+        } else {
+          luogoBuilder_.remove(index);
+        }
+        return this;
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Luogo.Builder getLuogoBuilder(
+          int index) {
+        return getLuogoFieldBuilder().getBuilder(index);
+      }
+      public smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder getLuogoOrBuilder(
+          int index) {
+        if (luogoBuilder_ == null) {
+          return luogo_.get(index);  } else {
+          return luogoBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder> 
+           getLuogoOrBuilderList() {
+        if (luogoBuilder_ != null) {
+          return luogoBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(luogo_);
+        }
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Luogo.Builder addLuogoBuilder() {
+        return getLuogoFieldBuilder().addBuilder(
+            smartcampus.service.esse3.data.message.Esse3.Luogo.getDefaultInstance());
+      }
+      public smartcampus.service.esse3.data.message.Esse3.Luogo.Builder addLuogoBuilder(
+          int index) {
+        return getLuogoFieldBuilder().addBuilder(
+            index, smartcampus.service.esse3.data.message.Esse3.Luogo.getDefaultInstance());
+      }
+      public java.util.List<smartcampus.service.esse3.data.message.Esse3.Luogo.Builder> 
+           getLuogoBuilderList() {
+        return getLuogoFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          smartcampus.service.esse3.data.message.Esse3.Luogo, smartcampus.service.esse3.data.message.Esse3.Luogo.Builder, smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder> 
+          getLuogoFieldBuilder() {
+        if (luogoBuilder_ == null) {
+          luogoBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              smartcampus.service.esse3.data.message.Esse3.Luogo, smartcampus.service.esse3.data.message.Esse3.Luogo.Builder, smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder>(
+                  luogo_,
+                  ((bitField0_ & 0x00000020) == 0x00000020),
+                  getParentForChildren(),
+                  isClean());
+          luogo_ = null;
+        }
+        return luogoBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.ADCalendarTable)
+    }
+    
+    static {
+      defaultInstance = new ADCalendarTable(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.ADCalendarTable)
+  }
+  
+  public interface DocentiOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // repeated string docente = 1;
+    java.util.List<String> getDocenteList();
+    int getDocenteCount();
+    String getDocente(int index);
+  }
+  public static final class Docenti extends
+      com.google.protobuf.GeneratedMessage
+      implements DocentiOrBuilder {
+    // Use Docenti.newBuilder() to construct.
+    private Docenti(Builder builder) {
+      super(builder);
+    }
+    private Docenti(boolean noInit) {}
+    
+    private static final Docenti defaultInstance;
+    public static Docenti getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Docenti getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Docenti_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Docenti_fieldAccessorTable;
+    }
+    
+    // repeated string docente = 1;
+    public static final int DOCENTE_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList docente_;
+    public java.util.List<String>
+        getDocenteList() {
+      return docente_;
+    }
+    public int getDocenteCount() {
+      return docente_.size();
+    }
+    public String getDocente(int index) {
+      return docente_.get(index);
+    }
+    
+    private void initFields() {
+      docente_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < docente_.size(); i++) {
+        output.writeBytes(1, docente_.getByteString(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < docente_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeBytesSizeNoTag(docente_.getByteString(i));
+        }
+        size += dataSize;
+        size += 1 * getDocenteList().size();
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Docenti parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Docenti prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.service.esse3.data.message.Esse3.DocentiOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Docenti_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Docenti_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.service.esse3.data.message.Esse3.Docenti.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        docente_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Docenti.getDescriptor();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Docenti getDefaultInstanceForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Docenti.getDefaultInstance();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Docenti build() {
+        smartcampus.service.esse3.data.message.Esse3.Docenti result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.service.esse3.data.message.Esse3.Docenti buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.service.esse3.data.message.Esse3.Docenti result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Docenti buildPartial() {
+        smartcampus.service.esse3.data.message.Esse3.Docenti result = new smartcampus.service.esse3.data.message.Esse3.Docenti(this);
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          docente_ = new com.google.protobuf.UnmodifiableLazyStringList(
+              docente_);
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.docente_ = docente_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Docenti) {
+          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Docenti)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Docenti other) {
+        if (other == smartcampus.service.esse3.data.message.Esse3.Docenti.getDefaultInstance()) return this;
+        if (!other.docente_.isEmpty()) {
+          if (docente_.isEmpty()) {
+            docente_ = other.docente_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureDocenteIsMutable();
+            docente_.addAll(other.docente_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              ensureDocenteIsMutable();
+              docente_.add(input.readBytes());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // repeated string docente = 1;
+      private com.google.protobuf.LazyStringList docente_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureDocenteIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          docente_ = new com.google.protobuf.LazyStringArrayList(docente_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      public java.util.List<String>
+          getDocenteList() {
+        return java.util.Collections.unmodifiableList(docente_);
+      }
+      public int getDocenteCount() {
+        return docente_.size();
+      }
+      public String getDocente(int index) {
+        return docente_.get(index);
+      }
+      public Builder setDocente(
           int index, String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  ensureDocentiIsMutable();
-        docenti_.set(index, value);
+  ensureDocenteIsMutable();
+        docente_.set(index, value);
         onChanged();
         return this;
       }
-      public Builder addDocenti(String value) {
+      public Builder addDocente(String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  ensureDocentiIsMutable();
-        docenti_.add(value);
+  ensureDocenteIsMutable();
+        docente_.add(value);
         onChanged();
         return this;
       }
-      public Builder addAllDocenti(
+      public Builder addAllDocente(
           java.lang.Iterable<String> values) {
-        ensureDocentiIsMutable();
-        super.addAll(values, docenti_);
+        ensureDocenteIsMutable();
+        super.addAll(values, docente_);
         onChanged();
         return this;
       }
-      public Builder clearDocenti() {
-        docenti_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000010);
+      public Builder clearDocente() {
+        docente_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
-      void addDocenti(com.google.protobuf.ByteString value) {
-        ensureDocentiIsMutable();
-        docenti_.add(value);
+      void addDocente(com.google.protobuf.ByteString value) {
+        ensureDocenteIsMutable();
+        docente_.add(value);
         onChanged();
       }
+      
+      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Docenti)
+    }
+    
+    static {
+      defaultInstance = new Docenti(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Docenti)
+  }
+  
+  public interface LuogoOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // repeated string aula = 6;
+    java.util.List<String> getAulaList();
+    int getAulaCount();
+    String getAula(int index);
+    
+    // repeated string edificio = 7;
+    java.util.List<String> getEdificioList();
+    int getEdificioCount();
+    String getEdificio(int index);
+  }
+  public static final class Luogo extends
+      com.google.protobuf.GeneratedMessage
+      implements LuogoOrBuilder {
+    // Use Luogo.newBuilder() to construct.
+    private Luogo(Builder builder) {
+      super(builder);
+    }
+    private Luogo(boolean noInit) {}
+    
+    private static final Luogo defaultInstance;
+    public static Luogo getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Luogo getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Luogo_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Luogo_fieldAccessorTable;
+    }
+    
+    // repeated string aula = 6;
+    public static final int AULA_FIELD_NUMBER = 6;
+    private com.google.protobuf.LazyStringList aula_;
+    public java.util.List<String>
+        getAulaList() {
+      return aula_;
+    }
+    public int getAulaCount() {
+      return aula_.size();
+    }
+    public String getAula(int index) {
+      return aula_.get(index);
+    }
+    
+    // repeated string edificio = 7;
+    public static final int EDIFICIO_FIELD_NUMBER = 7;
+    private com.google.protobuf.LazyStringList edificio_;
+    public java.util.List<String>
+        getEdificioList() {
+      return edificio_;
+    }
+    public int getEdificioCount() {
+      return edificio_.size();
+    }
+    public String getEdificio(int index) {
+      return edificio_.get(index);
+    }
+    
+    private void initFields() {
+      aula_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      edificio_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < aula_.size(); i++) {
+        output.writeBytes(6, aula_.getByteString(i));
+      }
+      for (int i = 0; i < edificio_.size(); i++) {
+        output.writeBytes(7, edificio_.getByteString(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < aula_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeBytesSizeNoTag(aula_.getByteString(i));
+        }
+        size += dataSize;
+        size += 1 * getAulaList().size();
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < edificio_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeBytesSizeNoTag(edificio_.getByteString(i));
+        }
+        size += dataSize;
+        size += 1 * getEdificioList().size();
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static smartcampus.service.esse3.data.message.Esse3.Luogo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(smartcampus.service.esse3.data.message.Esse3.Luogo prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements smartcampus.service.esse3.data.message.Esse3.LuogoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Luogo_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return smartcampus.service.esse3.data.message.Esse3.internal_static_smartcampus_service_esse3_data_message_Luogo_fieldAccessorTable;
+      }
+      
+      // Construct using smartcampus.service.esse3.data.message.Esse3.Luogo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        aula_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        edificio_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Luogo.getDescriptor();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Luogo getDefaultInstanceForType() {
+        return smartcampus.service.esse3.data.message.Esse3.Luogo.getDefaultInstance();
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Luogo build() {
+        smartcampus.service.esse3.data.message.Esse3.Luogo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private smartcampus.service.esse3.data.message.Esse3.Luogo buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        smartcampus.service.esse3.data.message.Esse3.Luogo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public smartcampus.service.esse3.data.message.Esse3.Luogo buildPartial() {
+        smartcampus.service.esse3.data.message.Esse3.Luogo result = new smartcampus.service.esse3.data.message.Esse3.Luogo(this);
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          aula_ = new com.google.protobuf.UnmodifiableLazyStringList(
+              aula_);
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.aula_ = aula_;
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          edificio_ = new com.google.protobuf.UnmodifiableLazyStringList(
+              edificio_);
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.edificio_ = edificio_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof smartcampus.service.esse3.data.message.Esse3.Luogo) {
+          return mergeFrom((smartcampus.service.esse3.data.message.Esse3.Luogo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(smartcampus.service.esse3.data.message.Esse3.Luogo other) {
+        if (other == smartcampus.service.esse3.data.message.Esse3.Luogo.getDefaultInstance()) return this;
+        if (!other.aula_.isEmpty()) {
+          if (aula_.isEmpty()) {
+            aula_ = other.aula_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureAulaIsMutable();
+            aula_.addAll(other.aula_);
+          }
+          onChanged();
+        }
+        if (!other.edificio_.isEmpty()) {
+          if (edificio_.isEmpty()) {
+            edificio_ = other.edificio_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureEdificioIsMutable();
+            edificio_.addAll(other.edificio_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 50: {
+              ensureAulaIsMutable();
+              aula_.add(input.readBytes());
+              break;
+            }
+            case 58: {
+              ensureEdificioIsMutable();
+              edificio_.add(input.readBytes());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
       
       // repeated string aula = 6;
       private com.google.protobuf.LazyStringList aula_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureAulaIsMutable() {
-        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
           aula_ = new com.google.protobuf.LazyStringArrayList(aula_);
-          bitField0_ |= 0x00000020;
+          bitField0_ |= 0x00000001;
          }
       }
       public java.util.List<String>
@@ -12447,208 +10952,22 @@ public final class Esse3 {
       }
       public Builder clearAula() {
         aula_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
       void addAula(com.google.protobuf.ByteString value) {
         ensureAulaIsMutable();
         aula_.add(value);
-=======
-      // required string id = 1;
-      private java.lang.Object id_ = "";
-      public boolean hasId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public String getId() {
-        java.lang.Object ref = id_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          id_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setId(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = getDefaultInstance().getId();
-        onChanged();
-        return this;
-      }
-      void setId(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
-        id_ = value;
         onChanged();
       }
       
-      // required string title = 2;
-      private java.lang.Object title_ = "";
-      public boolean hasTitle() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public String getTitle() {
-        java.lang.Object ref = title_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          title_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setTitle(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        title_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearTitle() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        title_ = getDefaultInstance().getTitle();
-        onChanged();
-        return this;
-      }
-      void setTitle(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
-        title_ = value;
-        onChanged();
-      }
-      
-      // required string teacher = 3;
-      private java.lang.Object teacher_ = "";
-      public boolean hasTeacher() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public String getTeacher() {
-        java.lang.Object ref = teacher_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          teacher_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setTeacher(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        teacher_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearTeacher() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        teacher_ = getDefaultInstance().getTeacher();
-        onChanged();
-        return this;
-      }
-      void setTeacher(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
-        teacher_ = value;
-        onChanged();
-      }
-      
-      // required string room = 4;
-      private java.lang.Object room_ = "";
-      public boolean hasRoom() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      public String getRoom() {
-        java.lang.Object ref = room_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          room_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setRoom(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        room_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearRoom() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        room_ = getDefaultInstance().getRoom();
-        onChanged();
-        return this;
-      }
-      void setRoom(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000008;
-        room_ = value;
-        onChanged();
-      }
-      
-      // required int64 from = 5;
-      private long from_ ;
-      public boolean hasFrom() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      public long getFrom() {
-        return from_;
-      }
-      public Builder setFrom(long value) {
-        bitField0_ |= 0x00000010;
-        from_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearFrom() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        from_ = 0L;
-        onChanged();
-        return this;
-      }
-      
-      // required int64 to = 6;
-      private long to_ ;
-      public boolean hasTo() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      public long getTo() {
-        return to_;
-      }
-      public Builder setTo(long value) {
-        bitField0_ |= 0x00000020;
-        to_ = value;
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
-        onChanged();
-        return this;
-      }
-      public Builder clearTo() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        to_ = 0L;
-        onChanged();
-        return this;
-      }
-      
-<<<<<<< HEAD
       // repeated string edificio = 7;
       private com.google.protobuf.LazyStringList edificio_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureEdificioIsMutable() {
-        if (!((bitField0_ & 0x00000040) == 0x00000040)) {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
           edificio_ = new com.google.protobuf.LazyStringArrayList(edificio_);
-          bitField0_ |= 0x00000040;
+          bitField0_ |= 0x00000002;
          }
       }
       public java.util.List<String>
@@ -12689,7 +11008,7 @@ public final class Esse3 {
       }
       public Builder clearEdificio() {
         edificio_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -12699,62 +11018,15 @@ public final class Esse3 {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.ADCalendarTable)
+      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.Luogo)
     }
     
     static {
-      defaultInstance = new ADCalendarTable(true);
+      defaultInstance = new Luogo(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.ADCalendarTable)
-=======
-      // required string type = 7;
-      private java.lang.Object type_ = "";
-      public boolean hasType() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
-      }
-      public String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
-      }
-      public Builder setType(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000040;
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearType() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      void setType(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000040;
-        type_ = value;
-        onChanged();
-      }
-      
-      // @@protoc_insertion_point(builder_scope:smartcampus.service.esse3.data.message.CalendarCds)
-    }
-    
-    static {
-      defaultInstance = new CalendarCds(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.CalendarCds)
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+    // @@protoc_insertion_point(class_scope:smartcampus.service.esse3.data.message.Luogo)
   }
   
   private static com.google.protobuf.Descriptors.Descriptor
@@ -12802,14 +11074,21 @@ public final class Esse3 {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_smartcampus_service_esse3_data_message_CalendarCds_fieldAccessorTable;
-<<<<<<< HEAD
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_fieldAccessorTable;
-=======
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_service_esse3_data_message_Docenti_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_service_esse3_data_message_Docenti_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_smartcampus_service_esse3_data_message_Luogo_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_smartcampus_service_esse3_data_message_Luogo_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -12849,15 +11128,14 @@ public final class Esse3 {
       " \002(\t\022\014\n\004room\030\005 \002(\t\022\017\n\007teacher\030\006 \002(\t\"o\n\013C" +
       "alendarCds\022\n\n\002id\030\001 \002(\t\022\r\n\005title\030\002 \002(\t\022\017\n" +
       "\007teacher\030\003 \002(\t\022\014\n\004room\030\004 \002(\t\022\014\n\004from\030\005 \002",
-<<<<<<< HEAD
-      "(\003\022\n\n\002to\030\006 \002(\003\022\014\n\004type\030\007 \002(\t\"\205\001\n\017ADCalen" +
+      "(\003\022\n\n\002to\030\006 \002(\003\022\014\n\004type\030\007 \002(\t\"\324\001\n\017ADCalen" +
       "darTable\022\014\n\004data\030\001 \003(\t\022\013\n\003ora\030\002 \003(\t\022\021\n\tt" +
-      "ipologia\030\003 \003(\t\022\023\n\013descrizione\030\004 \003(\t\022\017\n\007d" +
-      "ocenti\030\005 \003(\t\022\014\n\004aula\030\006 \003(\t\022\020\n\010edificio\030\007" +
-      " \003(\t"
-=======
-      "(\003\022\n\n\002to\030\006 \002(\003\022\014\n\004type\030\007 \002(\t"
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+      "ipologia\030\003 \003(\t\022\023\n\013descrizione\030\004 \003(\t\022@\n\007d" +
+      "ocenti\030\005 \003(\0132/.smartcampus.service.esse3" +
+      ".data.message.Docenti\022<\n\005luogo\030\006 \003(\0132-.s" +
+      "martcampus.service.esse3.data.message.Lu" +
+      "ogo\"\032\n\007Docenti\022\017\n\007docente\030\001 \003(\t\"\'\n\005Luogo" +
+      "\022\014\n\004aula\030\006 \003(\t\022\020\n\010edificio\030\007 \003(\t"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -12936,17 +11214,30 @@ public final class Esse3 {
               new java.lang.String[] { "Id", "Title", "Teacher", "Room", "From", "To", "Type", },
               smartcampus.service.esse3.data.message.Esse3.CalendarCds.class,
               smartcampus.service.esse3.data.message.Esse3.CalendarCds.Builder.class);
-<<<<<<< HEAD
           internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_descriptor =
             getDescriptor().getMessageTypes().get(9);
           internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_smartcampus_service_esse3_data_message_ADCalendarTable_descriptor,
-              new java.lang.String[] { "Data", "Ora", "Tipologia", "Descrizione", "Docenti", "Aula", "Edificio", },
+              new java.lang.String[] { "Data", "Ora", "Tipologia", "Descrizione", "Docenti", "Luogo", },
               smartcampus.service.esse3.data.message.Esse3.ADCalendarTable.class,
               smartcampus.service.esse3.data.message.Esse3.ADCalendarTable.Builder.class);
-=======
->>>>>>> 31d3669c7b08b4a49b1c91bd5e348bbb2921b467
+          internal_static_smartcampus_service_esse3_data_message_Docenti_descriptor =
+            getDescriptor().getMessageTypes().get(10);
+          internal_static_smartcampus_service_esse3_data_message_Docenti_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_service_esse3_data_message_Docenti_descriptor,
+              new java.lang.String[] { "Docente", },
+              smartcampus.service.esse3.data.message.Esse3.Docenti.class,
+              smartcampus.service.esse3.data.message.Esse3.Docenti.Builder.class);
+          internal_static_smartcampus_service_esse3_data_message_Luogo_descriptor =
+            getDescriptor().getMessageTypes().get(11);
+          internal_static_smartcampus_service_esse3_data_message_Luogo_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_smartcampus_service_esse3_data_message_Luogo_descriptor,
+              new java.lang.String[] { "Aula", "Edificio", },
+              smartcampus.service.esse3.data.message.Esse3.Luogo.class,
+              smartcampus.service.esse3.data.message.Esse3.Luogo.Builder.class);
           return null;
         }
       };
